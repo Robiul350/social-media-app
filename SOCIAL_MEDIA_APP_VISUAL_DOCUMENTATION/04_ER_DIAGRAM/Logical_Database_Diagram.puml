@@ -1,0 +1,41 @@
+@startuml
+title Logical Database Diagram
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle "users app" as lane_users
+rectangle "User\nid\nusername UQ\nemail UQ" as DB_TBL_001
+rectangle "Profile\nuser 1-1\nis_private\nallow_comments" as DB_TBL_002
+rectangle "Story\nauthor FK\nprivacy\nexpires_at" as DB_TBL_003
+rectangle "StoryView\nstory FK\nviewer FK\nUQ(story,viewer)" as DB_TBL_004
+rectangle "StoryReaction\nstory FK\nuser FK\n7 types" as DB_TBL_005
+rectangle "AdminAction\ninert model\nno actor\nno writer" as DB_TBL_006
+rectangle "posts app" as lane_posts
+rectangle "Post\nauthor FK\naudience\nis_draft" as DB_TBL_007
+rectangle "PostImage\npost FK\nimage\nposition" as DB_TBL_008
+rectangle "Bookmark\npost FK\nuser FK\nUQ(post,user)" as DB_TBL_009
+rectangle "Poll\npost 1-1\nquestion\nexpires_at" as DB_TBL_010
+rectangle "PollOption\npoll FK\ntext" as DB_TBL_011
+rectangle "PollVote\noption FK\nuser FK\nUQ(option,user)" as DB_TBL_012
+rectangle "Hashtag\nname UQ\nM2M Post" as DB_TBL_013
+rectangle "PostReport\npost FK\nreporter FK\nno status" as DB_TBL_014
+rectangle "social app" as lane_social
+rectangle "Like\npost FK\nuser FK\nUQ(post,user)" as DB_TBL_015
+rectangle "Comment\npost FK\nuser FK\nparent self-FK" as DB_TBL_016
+rectangle "Mention\ncomment FK\npost FK\nmentioned FK" as DB_TBL_017
+rectangle "CommentReaction\ncomment FK\nuser FK\n6 types" as DB_TBL_018
+rectangle "Follow\nfollower FK\nfollowing FK\nUQ direction" as DB_TBL_019
+rectangle "Block\nblocker FK\nblocked FK\nself-check" as DB_TBL_020
+rectangle "FriendRequest\nsender FK\nreceiver FK\nstatus" as DB_TBL_021
+rectangle "notifications app" as lane_notifications
+rectangle "Notification\nrecipient FK\nsender FK\ntype" as DB_TBL_022
+rectangle "NotificationPreference\nuser 1-1\n8 booleans" as DB_TBL_023
+rectangle "chat app" as lane_chat
+rectangle "GroupConversation\ncreated_by FK\nname\nM2M members" as DB_TBL_024
+rectangle "GroupMembership\ngroup FK\nuser FK\nrole" as DB_TBL_025
+rectangle "Message\nsender FK\nreceiver FK\ngroup FK" as DB_TBL_026
+lane_users ..> lane_posts : author/posts
+lane_posts ..> lane_social : likes/comments
+lane_social ..> lane_notifications : events
+lane_users ..> lane_chat : members/messages
+@enduml

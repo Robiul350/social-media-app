@@ -1,0 +1,11 @@
+@startuml
+title Registration Activity
+start
+:Open /register;
+:Submit username/email/password;
+if (Valid?) then (yes)
+:Create User + Profile signal;
+:Redirect to /login;
+endif
+stop
+@enduml

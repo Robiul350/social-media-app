@@ -1,0 +1,32 @@
+@startuml
+title State Machine Diagram
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle "FriendRequest\nsend → pending\naccept → accepted\nreject → rejected\ndelete cancels pending" as friend
+rectangle "Notification\ncreate → unread\nmark read → read\nno reverse flow\nno WS read update" as notif
+rectangle "Message\nsend → active\nPATCH → edited\nDELETE → soft-deleted" as message
+rectangle "Post\nis_draft → draft\nfuture scheduled → hidden\notherwise visible" as post
+rectangle "JWT session\nanonymous\nauthenticated\nrefreshing\nexpired/cleared" as jwt
+rectangle "pending" as s1
+rectangle "accepted" as s2
+rectangle "rejected" as s3
+rectangle "unread" as s4
+rectangle "read" as s5
+rectangle "active" as s6
+rectangle "edited" as s7
+rectangle "soft-deleted" as s8
+rectangle "anonymous" as s9
+rectangle "authenticated" as s10
+rectangle "refreshing" as s11
+rectangle "expired/cleared" as s12
+s1 --> s2 : accept
+s1 --> s3 : reject
+s4 --> s5 : mark read
+s6 --> s7 : PATCH
+s7 --> s8 : DELETE
+s9 --> s10 : login
+s10 --> s11 : 401
+s11 --> s10 : refresh ok
+s11 --> s12 : refresh fail
+@enduml

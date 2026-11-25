@@ -1,0 +1,11 @@
+@startuml
+title Admin Management Activity
+start
+:Open /admin/;
+if (Staff and model permission?) then (yes)
+:View KPI cards/charts;
+:Open changelist or analytics;
+:LogEntry records mutating action;
+endif
+stop
+@enduml

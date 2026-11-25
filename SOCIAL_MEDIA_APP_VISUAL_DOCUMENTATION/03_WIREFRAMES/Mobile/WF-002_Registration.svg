@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" role="img">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<rect x="0" y="0" width="720" height="1280" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="720" height="64" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="8" y="8" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">HEADER / LOGO / SEARCH</text>
+<rect x="0" y="1206" width="720" height="74" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="8" y="1214" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">BOTTOM NAV</text>
+<text x="700" y="1248" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">WF-002 Registration</text>
+<rect x="16" y="82" width="688" height="50" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">USERNAME</text>
+<rect x="16" y="146" width="688" height="50" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="154" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">EMAIL</text>
+<rect x="16" y="210" width="688" height="50" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="218" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">PASSWORD</text>
+<rect x="16" y="274" width="688" height="50" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="282" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">CONFIRM PASSWORD</text>
+<rect x="16" y="338" width="688" height="50" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">CREATE BUTTON</text>
+</svg>

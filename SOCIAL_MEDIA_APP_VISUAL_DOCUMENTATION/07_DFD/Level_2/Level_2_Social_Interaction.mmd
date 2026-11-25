@@ -1,0 +1,12 @@
+%% DFD Level 2 — Social Interaction
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  user["User"]
+  p["2.3 Social process<br/>• like/comment/follow/block"]
+  d1["D1 social tables"]
+  d2["D2 posts_post"]
+  d3["D3 Notifications"]
+  user -->|"actions"| p
+  p --> d1
+  p --> d2
+  p -->|"notification"| d3

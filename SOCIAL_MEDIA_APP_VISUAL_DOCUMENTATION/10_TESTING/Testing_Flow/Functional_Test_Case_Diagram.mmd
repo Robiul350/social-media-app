@@ -1,0 +1,19 @@
+%% Functional Test Case Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  ur["UR-001—035"]
+  tc1["TC-001—010 Auth/profile"]
+  tc2["TC-011—019 Content/social"]
+  tc3["TC-020—029 Realtime/backend-only"]
+  tc4["TC-030—035 Admin/session/PWA"]
+  src["Source evidence<br/>• models/views/routes"]
+  status["Status vocabulary<br/>• Implemented/Partial/etc."]
+  ur --> tc1
+  ur --> tc2
+  ur --> tc3
+  ur --> tc4
+  tc1 --> src
+  tc2 --> src
+  tc3 --> src
+  tc4 --> src
+  src --> status

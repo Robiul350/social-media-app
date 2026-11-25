@@ -1,0 +1,10 @@
+@startuml
+title Following a User
+participant User participant UserProfile.jsx participant DRF_API participant social/access.py participant PostgreSQL
+User -> UserProfile.jsx : Click Follow
+UserProfile.jsx -> DRF_API : POST users/<id>/follow/ [API-046]
+DRF_API -> social/access.py : Self/block guard
+DRF_API -> PostgreSQL : Toggle Follow unique pair
+DRF_API -> PostgreSQL : Create follow notification
+DRF_API -> UserProfile.jsx : 200/201 message; refresh state
+@enduml

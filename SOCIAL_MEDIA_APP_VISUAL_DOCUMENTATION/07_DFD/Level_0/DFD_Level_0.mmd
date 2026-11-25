@@ -1,0 +1,18 @@
+%% DFD Level 0 — Context Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  guest["Guest"]
+  user["Registered User"]
+  admin["Admin"]
+  system["Social Media App<br/>• REST API<br/>• WebSockets<br/>• Django admin"]
+  pg["D1 PostgreSQL"]
+  media["D2 Media storage"]
+  channel["D3 Channel layer"]
+  email["Email service<br/>• [NOT VERIFIED - USER CONFIRMATION REQUIRED]"]
+  guest -->|"register/login"| system
+  user -->|"REST + WS"| system
+  admin -->|"admin requests"| system
+  system -->|"queries"| pg
+  system -->|"uploads"| media
+  system -->|"events"| channel
+  system -->|"reset link"| email

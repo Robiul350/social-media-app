@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1320" viewBox="0 0 1920 1320" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">Physical Database Diagram</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL tables implied by current Django models and migrations.</text>
+<text x="1876" y="1277" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<rect x="45" y="156" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="40" y="150" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="56" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">User → DB-TBL-001</text>
+<text x="56" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="56" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• id</text>
+<text x="56" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• username UQ</text>
+<rect x="515" y="156" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="510" y="150" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="526" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Profile → DB-TBL-002</text>
+<text x="526" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="526" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user 1-1</text>
+<text x="526" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• is_private</text>
+<rect x="985" y="156" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="980" y="150" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="996" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Story → DB-TBL-003</text>
+<text x="996" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="996" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• author FK</text>
+<text x="996" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• privacy</text>
+<rect x="1455" y="156" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="1450" y="150" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="1466" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">StoryView → DB-TBL-004</text>
+<text x="1466" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="1466" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• story FK</text>
+<text x="1466" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• viewer FK</text>
+<rect x="45" y="301" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="40" y="295" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="56" y="309" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">StoryReaction → DB-TBL-005</text>
+<text x="56" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="56" y="357" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• story FK</text>
+<text x="56" y="375" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="515" y="301" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="510" y="295" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="526" y="309" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">AdminAction → DB-TBL-006</text>
+<text x="526" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="526" y="357" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• inert model</text>
+<text x="526" y="375" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• no actor</text>
+<rect x="985" y="301" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="980" y="295" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="996" y="309" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Post → DB-TBL-007</text>
+<text x="996" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="996" y="357" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• author FK</text>
+<text x="996" y="375" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• audience</text>
+<rect x="1455" y="301" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="1450" y="295" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="1466" y="309" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">PostImage → DB-TBL-008</text>
+<text x="1466" y="337" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="1466" y="357" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<text x="1466" y="375" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• image</text>
+<rect x="45" y="446" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="40" y="440" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="56" y="454" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Bookmark → DB-TBL-009</text>
+<text x="56" y="482" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="56" y="502" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<text x="56" y="520" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="515" y="446" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="510" y="440" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="526" y="454" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Poll → DB-TBL-010</text>
+<text x="526" y="482" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="526" y="502" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post 1-1</text>
+<text x="526" y="520" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• question</text>
+<rect x="985" y="446" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="980" y="440" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="996" y="454" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">PollOption → DB-TBL-011</text>
+<text x="996" y="482" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="996" y="502" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• poll FK</text>
+<text x="996" y="520" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• text</text>
+<rect x="1455" y="446" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="1450" y="440" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="1466" y="454" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">PollVote → DB-TBL-012</text>
+<text x="1466" y="482" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="1466" y="502" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• option FK</text>
+<text x="1466" y="520" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="45" y="591" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="40" y="585" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="56" y="599" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Hashtag → DB-TBL-013</text>
+<text x="56" y="627" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="56" y="647" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• name UQ</text>
+<text x="56" y="665" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• M2M Post</text>
+<rect x="515" y="591" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="510" y="585" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="526" y="599" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">PostReport → DB-TBL-014</text>
+<text x="526" y="627" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="526" y="647" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<text x="526" y="665" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• reporter FK</text>
+<rect x="985" y="591" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="980" y="585" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="996" y="599" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Like → DB-TBL-015</text>
+<text x="996" y="627" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="996" y="647" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<text x="996" y="665" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="1455" y="591" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="1450" y="585" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="1466" y="599" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Comment → DB-TBL-016</text>
+<text x="1466" y="627" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="1466" y="647" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<text x="1466" y="665" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="45" y="736" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="40" y="730" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="56" y="744" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Mention → DB-TBL-017</text>
+<text x="56" y="772" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="56" y="792" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• comment FK</text>
+<text x="56" y="810" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<rect x="515" y="736" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="510" y="730" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="526" y="744" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">CommentReaction → DB-TBL-018</text>
+<text x="526" y="772" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="526" y="792" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• comment FK</text>
+<text x="526" y="810" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="985" y="736" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="980" y="730" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="996" y="744" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Follow → DB-TBL-019</text>
+<text x="996" y="772" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="996" y="792" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• follower FK</text>
+<text x="996" y="810" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• following FK</text>
+<rect x="1455" y="736" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="1450" y="730" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="1466" y="744" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Block → DB-TBL-020</text>
+<text x="1466" y="772" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="1466" y="792" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• blocker FK</text>
+<text x="1466" y="810" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• blocked FK</text>
+<rect x="45" y="881" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="40" y="875" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="56" y="889" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">FriendRequest → DB-TBL-021</text>
+<text x="56" y="917" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="56" y="937" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• sender FK</text>
+<text x="56" y="955" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• receiver FK</text>
+<rect x="515" y="881" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="510" y="875" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="526" y="889" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Notification → DB-TBL-022</text>
+<text x="526" y="917" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="526" y="937" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• recipient FK</text>
+<text x="526" y="955" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• sender FK</text>
+<rect x="985" y="881" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="980" y="875" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="996" y="889" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">NotificationPreference → DB-TBL-023</text>
+<text x="996" y="917" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="996" y="937" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user 1-1</text>
+<text x="996" y="955" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• 8 booleans</text>
+<rect x="1455" y="881" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="1450" y="875" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="1466" y="889" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">GroupConversation → DB-TBL-024</text>
+<text x="1466" y="917" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="1466" y="937" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• created_by FK</text>
+<text x="1466" y="955" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• name</text>
+<rect x="45" y="1026" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="40" y="1020" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="56" y="1034" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">GroupMembership → DB-TBL-025</text>
+<text x="56" y="1062" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="56" y="1082" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• group FK</text>
+<text x="56" y="1100" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="515" y="1026" width="430" height="120" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="510" y="1020" width="430" height="120" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="526" y="1034" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Message → DB-TBL-026</text>
+<text x="526" y="1062" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL table</text>
+<text x="526" y="1082" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• sender FK</text>
+<text x="526" y="1100" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• receiver FK</text>
+<rect x="40" y="1198" width="1840" height="62" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="60" y="1212" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="60" y="1234" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Primary keys are implicit BigAutoField IDs. See Data_Dictionary.md for exact field names, constraints, and indexes.</text>
+</svg>

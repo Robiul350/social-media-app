@@ -1,0 +1,220 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+
+{% block nav-sidebar %}
+{% include "admin/nav_sidebar.html" %}
+{% endblock %}
+
+{% block sidebar %}{% endblock %}
+
+{% block content %}
+<div class="sc-dashboard">
+    <header class="sc-welcome">
+        <div>
+            <p class="sc-eyebrow">OVERVIEW</p>
+            <h2>Welcome back, {{ user.get_short_name|default:user.get_username }}!</h2>
+            <p>Here is what is happening across your SocialConnect community.</p>
+        </div>
+        <div class="sc-welcome-actions">
+            {% if analytics_url %}<a class="sc-primary-link" href="{{ analytics_url }}">View analytics <span aria-hidden="true">→</span></a>{% endif %}
+            <span class="sc-welcome-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4m0-12.8L17 7M7 17l-1.4 1.4"/><circle cx="12" cy="12" r="6"/></svg>
+            </span>
+        </div>
+    </header>
+
+    <section class="sc-kpi-grid" aria-label="Platform statistics">
+        {% for card in dashboard_stats %}
+        {% if card.url %}<a class="sc-kpi-card sc-accent-{{ card.accent }}" href="{{ card.url }}">{% else %}<article class="sc-kpi-card sc-accent-{{ card.accent }}">{% endif %}
+            <span class="sc-kpi-icon" aria-hidden="true">
+                {% if card.icon == "users" %}
+                <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm13 10v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                {% elif card.icon == "new-users" %}
+                <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm11-8v6m-3-3h6"/></svg>
+                {% elif card.icon == "active-users" %}
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                {% elif card.icon == "posts" %}
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h8"/></svg>
+                {% elif card.icon == "comments" %}
+                <svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+                {% elif card.icon == "likes" %}
+                <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+                {% elif card.icon == "requests" %}
+                <svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm11-8v6m-3-3h6"/></svg>
+                {% elif card.icon == "reports" %}
+                <svg viewBox="0 0 24 24"><path d="M5 21V4m0 1h12l-2 4 2 4H5"/></svg>
+                {% else %}
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg>
+                {% endif %}
+            </span>
+            <span class="sc-kpi-label">{{ card.label }}</span>
+            <strong class="sc-kpi-value">{{ card.value }}</strong>
+            <span class="sc-kpi-footnote">{{ card.description }}{% if card.trend %}<span class="sc-kpi-trend is-{{ card.trend.direction }}">{{ card.trend.label }}</span>{% endif %}</span>
+        {% if card.url %}</a>{% else %}</article>{% endif %}
+        {% endfor %}
+    </section>
+
+    {{ dashboard_chart_data|json_script:"sc-dashboard-data" }}
+    {% if can_view_user_stats or can_view_post_stats %}
+    <section class="sc-analytics-grid" aria-label="Platform analytics">
+        {% if can_view_user_stats %}
+        <article class="sc-dashboard-panel">
+            <div class="sc-panel-heading">
+                <div>
+                    <h2>User Growth</h2>
+                    <p>Monthly registrations over the past six months</p>
+                </div>
+                <span class="sc-period-label">Last 6 months</span>
+            </div>
+            <div class="sc-chart-legend"><span class="sc-legend-dot sc-dot-blue"></span> New users</div>
+            <div class="sc-chart-skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <canvas class="sc-chart sc-line-chart" id="sc-user-chart" role="img" aria-label="Monthly user registrations"></canvas>
+        </article>
+        {% endif %}
+        {% if can_view_post_stats %}
+        <article class="sc-dashboard-panel">
+            <div class="sc-panel-heading">
+                <div>
+                    <h2>Post Activity</h2>
+                    <p>Posts published over the past six months</p>
+                </div>
+                <span class="sc-period-label">Last 6 months</span>
+            </div>
+            <div class="sc-chart-legend"><span class="sc-legend-dot sc-dot-violet"></span> New posts</div>
+            <div class="sc-chart-skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <canvas class="sc-chart sc-line-chart" id="sc-post-chart" role="img" aria-label="Monthly post creation"></canvas>
+        </article>
+        {% endif %}
+    </section>
+    {% endif %}
+
+    <section class="sc-dashboard-panel sc-table-panel">
+        <header class="sc-table-heading">
+            <div>
+                <h2>Recent Users</h2>
+                <p>Newest members of your community</p>
+            </div>
+            {% if can_view_users %}<a class="sc-view-all" href="{% url 'admin:users_user_changelist' %}">View all users <span aria-hidden="true">→</span></a>{% endif %}
+        </header>
+        {% if recent_users %}
+        <div class="sc-table-scroll">
+            <table class="sc-dashboard-table sc-users-table">
+                <thead>
+                    <tr><th>User</th><th>Username</th><th>Email</th><th>Joined</th><th>Status</th><th class="sc-action-column">Action</th></tr>
+                </thead>
+                <tbody>
+                    {% for member in recent_users %}
+                    <tr>
+                        <td>
+                            <div class="sc-person-cell">
+                                {% if member.profile and member.profile.profile_picture %}
+                                    <img src="{{ member.profile.profile_picture.url }}" class="sc-table-avatar" alt="">
+                                {% else %}
+                                    <span class="sc-table-avatar sc-avatar-fallback">{{ member.get_short_name|default:member.username|first|upper }}</span>
+                                {% endif %}
+                                <span class="sc-person-name">{{ member.get_full_name|default:member.username }}</span>
+                            </div>
+                        </td>
+                        <td class="sc-muted-cell">@{{ member.username }}</td>
+                        <td>{{ member.email }}</td>
+                        <td>{{ member.date_joined|date:"M j, Y" }}</td>
+                        <td><span class="sc-status-pill{% if not member.is_active %} is-inactive{% endif %}">{% if member.is_active %}Active{% else %}Inactive{% endif %}</span></td>
+                        <td class="sc-action-column">
+                            {% if can_change_users %}<a class="sc-row-action" href="{% url 'admin:users_user_change' member.pk %}" aria-label="Manage {{ member.username }}">Manage</a>{% else %}<span class="sc-row-action-disabled">—</span>{% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="sc-empty-state">No users are available to display.</p>
+        {% endif %}
+    </section>
+
+    <section class="sc-dashboard-panel sc-table-panel sc-posts-panel">
+        <header class="sc-table-heading">
+            <div>
+                <h2>Recent Posts</h2>
+                <p>Latest content shared on SocialConnect</p>
+            </div>
+            {% if can_view_posts %}<a class="sc-view-all" href="{% url 'admin:posts_post_changelist' %}">View all posts <span aria-hidden="true">→</span></a>{% endif %}
+        </header>
+        {% if recent_posts %}
+        <div class="sc-table-scroll">
+            <table class="sc-dashboard-table sc-posts-table">
+                <thead>
+                    <tr><th>Post</th><th>Author</th><th>Media</th><th>Engagement</th><th>Published</th><th class="sc-action-column">Action</th></tr>
+                </thead>
+                <tbody>
+                    {% for post in recent_posts %}
+                    <tr>
+                        <td class="sc-post-copy">{{ post.content|default:"Media post"|truncatechars:92 }}</td>
+                        <td>
+                            <div class="sc-person-cell">
+                                {% if post.author.profile and post.author.profile.profile_picture %}
+                                    <img src="{{ post.author.profile.profile_picture.url }}" class="sc-table-avatar" alt="">
+                                {% else %}
+                                    <span class="sc-table-avatar sc-avatar-fallback">{{ post.author.username|first|upper }}</span>
+                                {% endif %}
+                                <span>@{{ post.author.username }}</span>
+                            </div>
+                        </td>
+                        <td>
+                            {% if post.image %}
+                                <img src="{{ post.image.url }}" class="sc-post-thumbnail" alt="Post media">
+                            {% elif post.video %}
+                                <a class="sc-media-link" href="{{ post.video.url }}" target="_blank" rel="noopener">View video</a>
+                            {% else %}<span class="sc-muted-cell">Text</span>{% endif %}
+                        </td>
+                        <td>
+                            {% if can_view_likes %}<span class="sc-engagement-count">{{ post.dashboard_like_count }} likes</span>{% endif %}
+                            {% if can_view_comments %}<span class="sc-engagement-count">{{ post.dashboard_comment_count }} comments</span>{% endif %}
+                            {% if not can_view_likes and not can_view_comments %}<span class="sc-muted-cell">Restricted</span>{% endif %}
+                        </td>
+                        <td>{{ post.created_at|date:"M j, Y" }}</td>
+                        <td class="sc-action-column">
+                            {% if can_change_posts %}<a class="sc-row-action" href="{% url 'admin:posts_post_change' post.pk %}" aria-label="Manage post {{ post.pk }}">Manage</a>{% else %}<span class="sc-row-action-disabled">—</span>{% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="sc-empty-state">No posts are available to display.</p>
+        {% endif %}
+    </section>
+
+    {% if can_view_activity %}
+    <section class="sc-dashboard-panel sc-table-panel">
+        <header class="sc-table-heading">
+            <div>
+                <h2>Recent Admin Activity</h2>
+                <p>Real changes recorded by Django's admin audit log</p>
+            </div>
+            <a class="sc-view-all" href="{% url 'admin:admin_logentry_changelist' %}">View all activity <span aria-hidden="true">→</span></a>
+        </header>
+        {% if recent_admin_activity %}
+        <div class="sc-table-scroll">
+            <table class="sc-dashboard-table sc-activity-table">
+                <thead><tr><th>Time</th><th>Admin</th><th>Change</th><th>Object</th></tr></thead>
+                <tbody>
+                    {% for entry in recent_admin_activity %}
+                    <tr>
+                        <td>{{ entry.action_time|date:"M j, Y H:i" }}</td>
+                        <td class="sc-muted-cell">{{ entry.user.username }}</td>
+                        <td>{{ entry.get_action_flag_display }}</td>
+                        <td class="sc-post-copy">{{ entry.object_repr|truncatechars:90 }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="sc-empty-state">No admin changes have been recorded yet.</p>
+        {% endif %}
+    </section>
+    {% endif %}
+</div>
+{% endblock %}

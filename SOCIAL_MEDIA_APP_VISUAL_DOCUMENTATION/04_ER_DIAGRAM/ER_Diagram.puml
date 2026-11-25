@@ -1,0 +1,52 @@
+@startuml
+title Complete Entity-Relationship Diagram
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle "User\nid\nusername UQ\nemail UQ\nemail_verified" as DB_TBL_001
+rectangle "Profile\nuser 1-1\nis_private\nallow_comments\nallow_messages" as DB_TBL_002
+rectangle "Story\nauthor FK\nprivacy\nexpires_at\nmedia" as DB_TBL_003
+rectangle "StoryView\nstory FK\nviewer FK\nUQ(story,viewer)" as DB_TBL_004
+rectangle "StoryReaction\nstory FK\nuser FK\n7 types\nUQ(user,story)" as DB_TBL_005
+rectangle "AdminAction\ninert model\nno actor\nno writer" as DB_TBL_006
+rectangle "Post\nauthor FK\naudience\nis_draft\nscheduled_for" as DB_TBL_007
+rectangle "PostImage\npost FK\nimage\nposition\nno writer" as DB_TBL_008
+rectangle "Bookmark\npost FK\nuser FK\nUQ(post,user)" as DB_TBL_009
+rectangle "Poll\npost 1-1\nquestion\nexpires_at" as DB_TBL_010
+rectangle "PollOption\npoll FK\ntext" as DB_TBL_011
+rectangle "PollVote\noption FK\nuser FK\nUQ(option,user)" as DB_TBL_012
+rectangle "Hashtag\nname UQ\nM2M Post" as DB_TBL_013
+rectangle "PostReport\npost FK\nreporter FK\nno status" as DB_TBL_014
+rectangle "Like\npost FK\nuser FK\nUQ(post,user)" as DB_TBL_015
+rectangle "Comment\npost FK\nuser FK\nparent self-FK" as DB_TBL_016
+rectangle "Mention\ncomment FK\npost FK\nmentioned FK" as DB_TBL_017
+rectangle "CommentReaction\ncomment FK\nuser FK\n6 types" as DB_TBL_018
+rectangle "Follow\nfollower FK\nfollowing FK\nUQ direction" as DB_TBL_019
+rectangle "Block\nblocker FK\nblocked FK\nself-check" as DB_TBL_020
+rectangle "FriendRequest\nsender FK\nreceiver FK\nstatus" as DB_TBL_021
+rectangle "Notification\nrecipient FK\nsender FK\ntype\nis_read" as DB_TBL_022
+rectangle "NotificationPreference\nuser 1-1\n8 booleans" as DB_TBL_023
+rectangle "GroupConversation\ncreated_by FK\nname\nM2M members" as DB_TBL_024
+rectangle "GroupMembership\ngroup FK\nuser FK\nrole\nmuted/archived" as DB_TBL_025
+rectangle "Message\nsender FK\nreceiver FK\ngroup FK\ndeleted_at" as DB_TBL_026
+DB_TBL_001 --- DB_TBL_002 : 1—1
+DB_TBL_001 --- DB_TBL_007 : 1—N
+DB_TBL_001 --- DB_TBL_003 : 1—N
+DB_TBL_003 --- DB_TBL_004 : 1—N
+DB_TBL_003 --- DB_TBL_005 : 1—N
+DB_TBL_007 --- DB_TBL_008 : 1—N
+DB_TBL_007 --- DB_TBL_010 : 1—1
+DB_TBL_010 --- DB_TBL_011 : 1—N
+DB_TBL_011 --- DB_TBL_012 : 1—N
+DB_TBL_007 --- DB_TBL_013 : M—N
+DB_TBL_007 --- DB_TBL_016 : 1—N
+DB_TBL_007 --- DB_TBL_015 : 1—N
+DB_TBL_001 --- DB_TBL_019 : 1—N
+DB_TBL_001 --- DB_TBL_020 : 1—N
+DB_TBL_001 --- DB_TBL_021 : 1—N
+DB_TBL_001 --- DB_TBL_022 : 1—N
+DB_TBL_001 --- DB_TBL_023 : 1—1
+DB_TBL_024 --- DB_TBL_025 : 1—N
+DB_TBL_026 --- DB_TBL_024 : N—1 group
+DB_TBL_001 --- DB_TBL_026 : 1—N sender
+@enduml

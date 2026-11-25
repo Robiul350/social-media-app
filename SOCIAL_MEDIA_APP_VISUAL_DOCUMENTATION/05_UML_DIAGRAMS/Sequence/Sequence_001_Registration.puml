@@ -1,0 +1,10 @@
+@startuml
+title User Registration
+participant Guest participant React_Login/Register participant DRF_API participant User/Profile participant PostgreSQL
+Guest -> React_Login/Register : Enter username, email, password
+React_Login/Register -> DRF_API : POST /api/users/register/ [API-010]
+DRF_API -> User/Profile : Validate password; create User
+User/Profile -> PostgreSQL : Signal creates Profile
+DRF_API -> React_Login/Register : 201 Registration successful
+React_Login/Register -> Guest : Redirect to /login
+@enduml

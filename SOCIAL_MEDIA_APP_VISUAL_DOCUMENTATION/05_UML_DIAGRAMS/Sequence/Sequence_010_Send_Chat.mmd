@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant Sender
+    participant Messages.jsx
+    participant WebSocket_/_DRF
+    participant ChatConsumer
+    participant PostgreSQL
+    Sender->>Messages.jsx: Open /messages/<user_id>/
+    Messages.jsx->>WebSocket_/_DRF: ws/chat/<id>/?token=... [API-090]
+    WebSocket_/_DRF->>ChatConsumer: can_chat_between recheck
+    ChatConsumer->>PostgreSQL: Persist Message; create notification
+    ChatConsumer->>Messages.jsx: chat_message / typing / presence frames
+    Messages.jsx->>Sender: Render message and receipt

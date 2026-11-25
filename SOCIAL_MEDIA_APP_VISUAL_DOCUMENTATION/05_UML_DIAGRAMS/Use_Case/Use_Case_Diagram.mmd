@@ -1,0 +1,67 @@
+%% Use Case Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  system["Social Media App system boundary"]
+  Guest["Guest"]
+  User["Registered User"]
+  Author["Content Author"]
+  Member["Message Participant"]
+  Admin["Administrator"]
+  GroupMember["Group Member"]
+  External["External System"]
+  UC_001["UC-001 Register account"]
+  UC_002["UC-002 Login and receive JWT"]
+  UC_003["UC-003 Refresh access token"]
+  UC_004["UC-004 Logout / blacklist refresh"]
+  UC_005["UC-005 Request password reset"]
+  UC_006["UC-006 Confirm password reset"]
+  UC_007["UC-007 Deactivate account"]
+  UC_008["UC-008 Edit own profile and privacy"]
+  UC_009["UC-009 Search and discover people"]
+  UC_010["UC-010 View public profile"]
+  UC_011["UC-011 Create/edit/delete post"]
+  UC_012["UC-012 Browse filtered feed"]
+  UC_013["UC-013 Like post"]
+  UC_014["UC-014 Comment and reply"]
+  UC_015["UC-015 Bookmark post"]
+  UC_016["UC-016 Pin/repost/report post"]
+  UC_017["UC-017 Create and view story"]
+  UC_018["UC-018 React to story"]
+  UC_019["UC-019 Follow / unfollow user"]
+  UC_020["UC-020 Friend request lifecycle"]
+  UC_021["UC-021 Block / unblock user"]
+  UC_022["UC-022 Manage notification preferences"]
+  UC_023["UC-023 Read notifications and counts"]
+  UC_024["UC-024 Send direct message"]
+  UC_025["UC-025 Typing/presence/read events"]
+  UC_026["UC-026 Create group conversation"]
+  UC_027["UC-027 Send group message"]
+  UC_028["UC-028 Vote in poll"]
+  UC_029["UC-029 Submit post report"]
+  UC_030["UC-030 Review admin analytics"]
+  UC_031["UC-031 Manage users via admin"]
+  UC_032["UC-032 Mark notifications read in admin"]
+  UC_033["UC-033 View system status"]
+  Guest --> UC_001
+  Guest --> UC_002
+  Guest --> UC_005
+  Guest --> UC_006
+  User --> UC_008
+  User --> UC_012
+  User --> UC_013
+  User --> UC_023
+  Author --> UC_011
+  Author --> UC_016
+  Author --> UC_029
+  Member --> UC_024
+  Member --> UC_025
+  Admin --> UC_030
+  Admin --> UC_031
+  Admin --> UC_032
+  Admin --> UC_033
+  GroupMember --> UC_026
+  GroupMember --> UC_027
+  External -.->|"PostgreSQL / Redis / email"| UC_012
+  UC_002 -.->|"<<include>> on 401"| UC_003
+  UC_011 -.->|"<<extend>> report"| UC_029
+  UC_017 -.->|"<<extend>> backend only"| UC_018

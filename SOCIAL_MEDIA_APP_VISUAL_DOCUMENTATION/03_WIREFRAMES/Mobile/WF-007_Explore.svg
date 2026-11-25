@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" role="img">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<rect x="0" y="0" width="720" height="1280" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="720" height="64" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="8" y="8" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">HEADER / LOGO / SEARCH</text>
+<rect x="0" y="1206" width="720" height="74" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="8" y="1214" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">BOTTOM NAV</text>
+<rect x="16" y="82" width="688" height="42" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">PROPOSED SCREEN LABEL</text>
+<text x="700" y="1248" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">WF-007 Explore</text>
+<rect x="16" y="136" width="688" height="54" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="144" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">SEARCH FIELD</text>
+<rect x="16" y="206" width="688" height="90" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="214" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">TRENDING TOPICS</text>
+<rect x="16" y="312" width="688" height="180" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="320" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">PEOPLE / SUGGESTIONS</text>
+</svg>

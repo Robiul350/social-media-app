@@ -1,0 +1,29 @@
+%% Package Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  frontend["frontend/src"]
+  pages["pages/"]
+  components["components/"]
+  api["api/"]
+  hooks["hooks/"]
+  backend["backend"]
+  config["config/"]
+  users["users/"]
+  posts["posts/"]
+  social["social/"]
+  chat["chat/"]
+  notifications["notifications/"]
+  adminpkg["templates/admin + static/admin"]
+  migrations["migrations in five apps"]
+  frontend --> pages
+  frontend --> components
+  frontend --> api
+  frontend --> hooks
+  backend --> config
+  backend --> users
+  backend --> posts
+  backend --> social
+  backend --> chat
+  backend --> notifications
+  backend --> adminpkg
+  backend --> migrations

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">Story Creation Activity</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">Initial node, actions, decisions, branches, merge, and final node.</text>
+<text x="1876" y="1037" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<circle cx="960" cy="170" r="20" fill="#16A34A" stroke="none" stroke-width="1"/>
+<text x="960" y="162" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">S</text>
+<rect x="720" y="222" width="480" height="54" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="960" y="241" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">Choose media/text/privacy</text>
+<polyline points="960,170 960,212" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="960,212 955,202 964,202" fill="#64748B" stroke="none"/>
+<polygon points="960,298 1070,332 960,366 850,332" fill="#FFF3DF" stroke="#D97706"/>
+<text x="960" y="324" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">Media ≤25 MB?</text>
+<polyline points="960,256 960,298" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="960,298 955,288 964,288" fill="#64748B" stroke="none"/>
+<rect x="720" y="394" width="480" height="54" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="960" y="413" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">POST /api/users/stories/</text>
+<polyline points="960,342 960,384" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="960,384 955,374 964,374" fill="#64748B" stroke="none"/>
+<rect x="720" y="480" width="480" height="54" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="960" y="499" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">Set expires_at = now + 24 h</text>
+<polyline points="960,428 960,470" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="960,470 955,460 964,460" fill="#64748B" stroke="none"/>
+<circle cx="960" cy="600" r="22" fill="#0F172A" stroke="none" stroke-width="1"/>
+<circle cx="960" cy="600" r="16" fill="#FFFFFF" stroke="#0F172A" stroke-width="3"/>
+<polyline points="960,514 960,556" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="960,556 955,546 964,546" fill="#64748B" stroke="none"/>
+<rect x="40" y="980" width="1840" height="58" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="62" y="996" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="62" y="1018" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Decision branches follow source-verified validation; failed branches are documented in the accompanying text, not inferred as new workflows.</text>
+</svg>

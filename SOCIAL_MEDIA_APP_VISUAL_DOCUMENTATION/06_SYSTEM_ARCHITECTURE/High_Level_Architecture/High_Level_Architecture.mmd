@@ -1,0 +1,19 @@
+%% High-Level System Architecture
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  browser["Browser: React SPA<br/>• routes/components<br/>• localStorage session"]
+  admin["Browser: Django admin<br/>• dashboard/roles/system"]
+  api["Django REST Framework<br/>• users/posts/social<br/>• notifications/chat"]
+  ws["Django Channels<br/>• chat consumer<br/>• notification consumer"]
+  pg["PostgreSQL<br/>• 26 app tables<br/>• JWT blacklist"]
+  channel["Redis / in-memory<br/>• REDIS_URL optional"]
+  media["Media storage<br/>• dev Django serving"]
+  email["Email service<br/>• reset links [NOT VERIFIED - USER CONFIRMATION REQUIRED]"]
+  browser -->|"REST"| api
+  browser -->|"WebSocket"| ws
+  admin -->|"Django views"| api
+  api --> pg
+  api --> media
+  ws --> channel
+  ws --> pg
+  api --> email

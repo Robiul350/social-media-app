@@ -1,0 +1,17 @@
+%% Notification Architecture
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  domain["Domain views<br/>• like/comment/follow/..."]
+  util["create_notification()<br/>• self/block/preferences"]
+  pg["PostgreSQL<br/>• persist first"]
+  commit["transaction.on_commit<br/>• publish event"]
+  channel["Channel layer<br/>• notification.created"]
+  consumer["NotificationConsumer<br/>• client frame"]
+  ui["Notifications.jsx<br/>• prepend + count"]
+  domain --> util
+  util --> pg
+  util --> commit
+  commit --> channel
+  channel --> consumer
+  consumer --> ui
+  ui -->|"mark read"| pg

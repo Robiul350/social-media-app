@@ -1,0 +1,10 @@
+@startuml
+title Follow Activity
+start
+:Open profile/search result;
+if (Self or blocked?) then (yes)
+:Toggle Follow;
+:Create follow notification;
+endif
+stop
+@enduml

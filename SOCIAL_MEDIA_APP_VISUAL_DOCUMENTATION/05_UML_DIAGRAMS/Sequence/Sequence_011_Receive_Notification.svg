@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">Receiving Notifications</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">Source-derived interaction flow; API IDs from API_ANALYSIS.md.</text>
+<text x="1876" y="1037" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<rect x="-20" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="90" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">Domain view</text>
+<polyline points="90,222 90,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="328" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="438" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">PostgreSQL</text>
+<polyline points="438,222 438,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="676" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="786" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">Channel layer</text>
+<polyline points="786,222 786,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="1024" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="1134" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">NotificationConsumer</text>
+<polyline points="1134,222 1134,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="1372" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="1482" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">Notifications.jsx</text>
+<polyline points="1482,222 1482,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="1720" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="1830" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">Recipient</text>
+<polyline points="1830,222 1830,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<polyline points="90,260 438,260" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="438,260 428,264 428,255" fill="#2563EB" stroke="none"/>
+<rect x="204" y="248" width="119" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="264" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Persist Notification</text>
+<text x="90" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1</text>
+<polyline points="90,332 786,332" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="786,332 776,336 776,327" fill="#2563EB" stroke="none"/>
+<rect x="342" y="320" width="190" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="438" y="324" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">on_commit notification.created</text>
+<text x="90" y="298" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">2</text>
+<polyline points="786,404 1134,404" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="1134,404 1124,408 1124,399" fill="#2563EB" stroke="none"/>
+<rect x="881" y="392" width="156" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="960" y="396" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Group notifications_&lt;id&gt;</text>
+<text x="786" y="370" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">3</text>
+<polyline points="1134,476 1482,476" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="1482,476 1472,480 1472,471" fill="#2563EB" stroke="none"/>
+<rect x="1235" y="464" width="144" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1308" y="468" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">{&quot;type&quot;:&quot;notification&quot;,...}</text>
+<text x="1134" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">4</text>
+<polyline points="1482,548 1830,548" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="1830,548 1820,552 1820,543" fill="#2563EB" stroke="none"/>
+<rect x="1550" y="536" width="210" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1656" y="540" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Prepend item; refresh count locally</text>
+<text x="1482" y="514" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">5</text>
+<polyline points="1830,620 1482,620" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="1482,620 1491,615 1491,624" fill="#2563EB" stroke="none"/>
+<rect x="1579" y="608" width="152" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1656" y="612" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Mark read: DB/local only</text>
+<text x="1830" y="586" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">6</text>
+<rect x="40" y="980" width="1840" height="58" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="62" y="996" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="62" y="1018" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Participants are limited to those that participate in the verified flow; backend-only branches are explicit.</text>
+</svg>

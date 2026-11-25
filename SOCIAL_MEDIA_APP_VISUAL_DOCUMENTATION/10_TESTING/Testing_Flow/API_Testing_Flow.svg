@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">API Testing Flow</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">REST verification path with authentication and visibility checks.</text>
+<text x="1876" y="1037" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<rect x="65" y="266" width="240" height="100" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="60" y="260" width="240" height="100" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="90" cy="294" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="112" y="278" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">API test client</text>
+<rect x="345" y="266" width="240" height="100" rx="12" fill="#C3CFC8" stroke="none" stroke-width="1"/>
+<rect x="340" y="260" width="240" height="100" rx="12" fill="#E8F7EE" stroke="#16A34A" stroke-width="2"/>
+<text x="356" y="274" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Obtain JWT</text>
+<rect x="665" y="266" width="260" height="100" rx="12" fill="#C3CFC8" stroke="none" stroke-width="1"/>
+<rect x="660" y="260" width="260" height="100" rx="12" fill="#E8F7EE" stroke="#16A34A" stroke-width="2"/>
+<text x="676" y="274" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Send REST request</text>
+<rect x="985" y="186" width="300" height="100" rx="12" fill="#C3CFC8" stroke="none" stroke-width="1"/>
+<rect x="980" y="180" width="300" height="100" rx="12" fill="#E8F7EE" stroke="#16A34A" stroke-width="2"/>
+<text x="996" y="194" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Permission + access.py</text>
+<rect x="985" y="366" width="300" height="100" rx="12" fill="#C3CFC8" stroke="none" stroke-width="1"/>
+<rect x="980" y="360" width="300" height="100" rx="12" fill="#E8F7EE" stroke="#16A34A" stroke-width="2"/>
+<text x="996" y="374" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Serializer validation</text>
+<rect x="1325" y="276" width="240" height="100" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="1320" y="270" width="240" height="100" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="1336" y="284" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL</text>
+<rect x="1325" y="506" width="240" height="100" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="1320" y="500" width="240" height="100" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="1336" y="514" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Assert response/state</text>
+<polyline points="300,310 340,310" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="340,310 330,314 330,305" fill="#64748B" stroke="none"/>
+<polyline points="580,310 660,310" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="660,310 650,314 650,305" fill="#64748B" stroke="none"/>
+<rect x="595" y="298" width="48" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="620" y="302" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Bearer</text>
+<polyline points="920,310 980,230" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="980,230 977,240 970,235" fill="#64748B" stroke="none"/>
+<polyline points="920,310 980,410" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="980,410 970,403 979,399" fill="#64748B" stroke="none"/>
+<polyline points="1280,230 1320,320" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1320,320 1311,312 1320,309" fill="#64748B" stroke="none"/>
+<polyline points="1280,410 1320,320" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1320,320 1320,330 1311,327" fill="#64748B" stroke="none"/>
+<polyline points="1440,370 1440,500" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1440,500 1435,490 1444,490" fill="#64748B" stroke="none"/>
+<rect x="40" y="958" width="1840" height="62" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="60" y="972" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="60" y="994" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">No ViewSets or @action decorators exist; test requests target APIView/generics endpoints.</text>
+</svg>

@@ -1,0 +1,18 @@
+%% User Journey Map
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  discover["1. Discover<br/>• register or login"]
+  settle["2. Settle<br/>• profile + privacy"]
+  consume["3. Consume<br/>• feed + stories"]
+  contribute["4. Contribute<br/>• posts + reactions"]
+  connect["5. Connect<br/>• follow/friend/chat"]
+  manage["6. Manage<br/>• notifications/preferences"]
+  admin["7. Oversee<br/>• Django admin"]
+  limits["Known friction<br/>• pagination/partial UI"]
+  discover --> settle
+  settle --> consume
+  consume --> contribute
+  contribute --> connect
+  connect --> manage
+  manage --> admin
+  admin -.-> limits

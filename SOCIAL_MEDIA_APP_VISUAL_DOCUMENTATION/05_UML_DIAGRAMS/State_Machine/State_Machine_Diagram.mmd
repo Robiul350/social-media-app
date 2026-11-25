@@ -1,0 +1,29 @@
+%% State Machine Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  friend["FriendRequest<br/>• send → pending<br/>• accept → accepted<br/>• reject → rejected<br/>• delete cancels pending"]
+  notif["Notification<br/>• create → unread<br/>• mark read → read<br/>• no reverse flow<br/>• no WS read update"]
+  message["Message<br/>• send → active<br/>• PATCH → edited<br/>• DELETE → soft-deleted"]
+  post["Post<br/>• is_draft → draft<br/>• future scheduled → hidden<br/>• otherwise visible"]
+  jwt["JWT session<br/>• anonymous<br/>• authenticated<br/>• refreshing<br/>• expired/cleared"]
+  s1["pending"]
+  s2["accepted"]
+  s3["rejected"]
+  s4["unread"]
+  s5["read"]
+  s6["active"]
+  s7["edited"]
+  s8["soft-deleted"]
+  s9["anonymous"]
+  s10["authenticated"]
+  s11["refreshing"]
+  s12["expired/cleared"]
+  s1 -->|"accept"| s2
+  s1 -->|"reject"| s3
+  s4 -->|"mark read"| s5
+  s6 -->|"PATCH"| s7
+  s7 -->|"DELETE"| s8
+  s9 -->|"login"| s10
+  s10 -->|"401"| s11
+  s11 -->|"refresh ok"| s10
+  s11 -->|"refresh fail"| s12

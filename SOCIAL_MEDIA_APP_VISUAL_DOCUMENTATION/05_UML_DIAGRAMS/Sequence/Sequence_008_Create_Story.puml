@@ -1,0 +1,10 @@
+@startuml
+title Creating a Story
+participant Author participant Stories.jsx participant DRF_API participant StorySerializer participant PostgreSQL
+Author -> Stories.jsx : Select media/text/privacy
+Stories.jsx -> DRF_API : POST /api/users/stories/ [API-022]
+DRF_API -> StorySerializer : Validate ≤25 MB media
+StorySerializer -> PostgreSQL : Set author and +24 h expiry
+DRF_API -> Stories.jsx : 201 StorySerializer
+Stories.jsx -> Author : Story strip updates
+@enduml

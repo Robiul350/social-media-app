@@ -1,0 +1,10 @@
+@startuml
+title Commenting on a Post
+participant User participant PostActions.jsx participant DRF_API participant social/access.py participant PostgreSQL
+User -> PostActions.jsx : Submit comment or reply
+PostActions.jsx -> DRF_API : POST posts/<id>/comments/ [API-043]
+DRF_API -> social/access.py : Visibility + parent same-post check
+DRF_API -> PostgreSQL : Create Comment; extract mentions
+DRF_API -> PostgreSQL : Create comment/reply/mention notifications
+DRF_API -> PostActions.jsx : 201 CommentSerializer
+@enduml

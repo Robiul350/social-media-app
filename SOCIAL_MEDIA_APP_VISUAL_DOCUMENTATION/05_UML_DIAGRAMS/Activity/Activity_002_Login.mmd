@@ -1,0 +1,14 @@
+flowchart TD
+  n0[Start]
+  n1[Open /login]
+  n2[POST /api/users/login/]
+  n3[Credentials valid?]
+  n4[Store four localStorage keys]
+  n5[Dispatch auth-change; redirect]
+  n6[End]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6

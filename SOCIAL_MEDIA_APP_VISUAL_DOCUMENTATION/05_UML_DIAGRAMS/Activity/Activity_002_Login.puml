@@ -1,0 +1,11 @@
+@startuml
+title Login Activity
+start
+:Open /login;
+:POST /api/users/login/;
+if (Credentials valid?) then (yes)
+:Store four localStorage keys;
+:Dispatch auth-change; redirect;
+endif
+stop
+@enduml

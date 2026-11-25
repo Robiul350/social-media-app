@@ -1,0 +1,23 @@
+@startuml
+title Object Diagram
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle ":User id=12\nusername=alexmorgan\nemail=alex@example.com" as user1
+rectangle ":Profile\nis_private=false\nallow_messages=followers" as profile1
+rectangle ":Post id=88\naudience=friends\nis_draft=false" as post1
+rectangle ":Comment\nparent=null\ncontent=..." as comment1
+rectangle ":Notification\ntype=like\nis_read=false" as notif1
+rectangle ":Message\nreceiver_id=19\ndeleted_at=null" as msg1
+rectangle ":Story\nprivacy=public\nexpires_at=+24h" as story1
+rectangle ":StoryReaction\nreaction_type=love" as react1
+rectangle ":NotificationPreference\nlikes=true\nmentions=true" as prefs
+user1 --> profile1 : profile
+user1 --> post1 : author
+post1 --> comment1 : comments
+post1 --> notif1 : target
+user1 --> msg1 : sender
+user1 --> story1 : author
+story1 --> react1 : reactions
+user1 --> prefs : preferences
+@enduml

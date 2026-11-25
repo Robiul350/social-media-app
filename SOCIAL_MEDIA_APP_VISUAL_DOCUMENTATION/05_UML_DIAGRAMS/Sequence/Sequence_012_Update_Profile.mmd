@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant User
+    participant EditProfile.jsx
+    participant DRF_API
+    participant ProfileSerializer
+    participant PostgreSQL
+    User->>EditProfile.jsx: Edit fields/privacy/media
+    EditProfile.jsx->>DRF_API: PATCH /api/users/profile/ [API-019]
+    DRF_API->>ProfileSerializer: Validate image sizes/removal flags
+    ProfileSerializer->>PostgreSQL: Update Profile
+    DRF_API->>EditProfile.jsx: 200 Profile updated
+    EditProfile.jsx->>User: Dispatch profile-change; refresh UI

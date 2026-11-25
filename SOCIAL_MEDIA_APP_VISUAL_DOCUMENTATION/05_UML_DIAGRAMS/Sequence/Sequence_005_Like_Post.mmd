@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant User
+    participant PostActions.jsx
+    participant DRF_API
+    participant Notification_utility
+    participant PostgreSQL
+    User->>PostActions.jsx: Click like
+    PostActions.jsx->>DRF_API: POST posts/<id>/like/ [API-041]
+    DRF_API->>PostgreSQL: Toggle Like unique pair
+    DRF_API->>Notification_utility: create_notification(like)
+    Notification_utility->>PostgreSQL: Persist if allowed
+    DRF_API->>PostActions.jsx: {liked, like_count}

@@ -1,0 +1,14 @@
+flowchart TD
+  n0[Start]
+  n1[Open /register]
+  n2[Submit username/email/password]
+  n3[Valid?]
+  n4[Create User + Profile signal]
+  n5[Redirect to /login]
+  n6[End]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6

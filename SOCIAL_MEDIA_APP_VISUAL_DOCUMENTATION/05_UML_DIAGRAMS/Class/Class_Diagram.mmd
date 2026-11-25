@@ -1,0 +1,57 @@
+%% Class Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  class_User["User<br/>• username<br/>• email<br/>• is_staff<br/>• is_active"]
+  class_Profile["Profile<br/>• is_private<br/>• allow_comments<br/>• allow_messages<br/>• privacy fields"]
+  class_Post["Post<br/>• content<br/>• image<br/>• video<br/>• audience"]
+  class_Story["Story<br/>• media<br/>• text<br/>• privacy<br/>• expires_at"]
+  class_StoryView["StoryView<br/>• story<br/>• viewer<br/>• viewed_at<br/>• unique pair"]
+  class_StoryReaction["StoryReaction<br/>• user<br/>• story<br/>• reaction_type<br/>• 7 choices"]
+  class_Like["Like<br/>• post<br/>• user<br/>• created_at<br/>• unique pair"]
+  class_Comment["Comment<br/>• post<br/>• user<br/>• parent<br/>• content"]
+  class_Mention["Mention<br/>• mentioned<br/>• created_at<br/>• regex extraction"]
+  class_CommentReaction["CommentReaction<br/>• comment<br/>• user<br/>• reaction<br/>• no UI"]
+  class_Follow["Follow<br/>• follower<br/>• following<br/>• unique direction"]
+  class_Block["Block<br/>• blocker<br/>• blocked<br/>• self-check"]
+  class_FriendRequest["FriendRequest<br/>• sender<br/>• receiver<br/>• status<br/>• accept/reject"]
+  class_Notification["Notification<br/>• recipient<br/>• sender<br/>• post<br/>• comment"]
+  class_NotificationPreference["NotificationPreference<br/>• 8 booleans<br/>• opt-outs"]
+  class_Poll["Poll<br/>• question<br/>• expires_at<br/>• no CRUD"]
+  class_PollOption["PollOption<br/>• text<br/>• vote target"]
+  class_PollVote["PollVote<br/>• user<br/>• option<br/>• view-level guard"]
+  class_Bookmark["Bookmark<br/>• post<br/>• user<br/>• unique pair"]
+  class_Hashtag["Hashtag<br/>• name<br/>• regex sync"]
+  class_PostReport["PostReport<br/>• post<br/>• reporter<br/>• reason<br/>• no status"]
+  class_PostImage["PostImage<br/>• post<br/>• image<br/>• position<br/>• no writer"]
+  class_GroupConversation["GroupConversation<br/>• name<br/>• created_by<br/>• avatar<br/>• REST only"]
+  class_GroupMembership["GroupMembership<br/>• group<br/>• user<br/>• role<br/>• muted/archived unused"]
+  class_Message["Message<br/>• sender<br/>• receiver<br/>• group<br/>• deleted_at"]
+  class_AdminAction["AdminAction<br/>• action_type<br/>• target_type<br/>• metadata<br/>• no writer"]
+  class_APISerializer["APISerializer<br/>• validate<br/>• create<br/>• update<br/>• permission-aware output"]
+  class_APIView["APIView<br/>• get<br/>• post<br/>• patch<br/>• delete"]
+  class_ChatConsumer["ChatConsumer<br/>• connect<br/>• receive<br/>• disconnect<br/>• JWT query token"]
+  class_NotificationConsumer["NotificationConsumer<br/>• group_add<br/>• receive<br/>• client frame translation"]
+  class_User -->|"1—1"| class_Profile
+  class_User -->|"1—N"| class_Post
+  class_User -->|"1—N"| class_Story
+  class_Story -->|"1—N"| class_StoryView
+  class_Story -->|"1—N"| class_StoryReaction
+  class_Post -->|"1—N"| class_Like
+  class_Post -->|"1—N"| class_Comment
+  class_Post -->|"1—1"| class_Poll
+  class_Poll -->|"1—N"| class_PollOption
+  class_PollOption -->|"1—N"| class_PollVote
+  class_Post -->|"M—N"| class_Hashtag
+  class_Comment -->|"1—N"| class_Mention
+  class_Comment -->|"1—N"| class_CommentReaction
+  class_User -->|"1—N"| class_Follow
+  class_User -->|"1—N"| class_Block
+  class_User -->|"1—N"| class_FriendRequest
+  class_User -->|"1—N"| class_Notification
+  class_User -->|"1—1"| class_NotificationPreference
+  class_GroupConversation -->|"1—N"| class_GroupMembership
+  class_Message -->|"N—1"| class_GroupConversation
+  class_APIView -->|"uses"| class_APISerializer
+  class_APISerializer -->|"serializes"| class_Post
+  class_ChatConsumer -->|"persists"| class_Message
+  class_NotificationConsumer -->|"broadcasts"| class_Notification

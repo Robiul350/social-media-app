@@ -1,0 +1,22 @@
+%% User Flow Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  start["Start"]
+  login["Login / Register"]
+  home["Home feed"]
+  post["Create/like/comment"]
+  search["Search/follow"]
+  chat["Direct chat"]
+  notify["Notifications"]
+  profile["Profile/settings"]
+  logout["Logout"]
+  start --> login
+  login --> home
+  home --> post
+  home --> search
+  home --> chat
+  post --> notify
+  search --> notify
+  chat --> notify
+  home --> profile
+  profile --> logout

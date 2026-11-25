@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="720" height="1280" rx="0" fill="#F5F7FB" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="720" height="66" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="64" width="720" height="2" rx="0" fill="#DCE3EE" stroke="none" stroke-width="1"/>
+<circle cx="32" cy="33" r="16" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="32" y="25" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">SC</text>
+<text x="60" y="16" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#0F172A" text-anchor="start" dominant-baseline="text-before-edge">SocialConnect</text>
+<text x="60" y="38" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">Chat with Maya</text>
+<rect x="0" y="1204" width="720" height="76" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="1204" width="720" height="2" rx="0" fill="#DCE3EE" stroke="none" stroke-width="1"/>
+<circle cx="72" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="72" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">⌂</text>
+<text x="72" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Home</text>
+<circle cx="216" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="216" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">⌕</text>
+<text x="216" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Explor</text>
+<circle cx="360" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="360" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">◎</text>
+<text x="360" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Friend</text>
+<circle cx="504" cy="1230" r="11" fill="#E0E9FC" stroke="none" stroke-width="1"/>
+<text x="504" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">✉</text>
+<text x="504" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Messag</text>
+<circle cx="648" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="648" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">♢</text>
+<text x="648" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Notifi</text>
+<rect x="20" y="84" width="271" height="22" rx="11" fill="#E8F7EE" stroke="none" stroke-width="1"/>
+<text x="155" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" font-style="" fill="#16A34A" text-anchor="middle" dominant-baseline="central">UI-SCR-019  |  Individual Chat Page  |  Implemented</text>
+<rect x="25" y="128" width="680" height="62" rx="16" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<rect x="20" y="122" width="680" height="62" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<circle cx="56" cy="153" r="20" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="56" y="144" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">M</text>
+<text x="86" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Maya Chen</text>
+<text x="86" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#16A34A" text-anchor="start" dominant-baseline="text-before-edge">Online  ·  typing…</text>
+<text x="600" y="152" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">↩ Back</text>
+<rect x="44" y="200" width="520" height="56" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="60" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Are we still on for Saturday?</text>
+<text x="60" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">12:00</text>
+<rect x="156" y="272" width="520" height="56" rx="16" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="172" y="284" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">Yes! I found a route with a great viewpoint.</text>
+<text x="172" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" font-style="" fill="#DBEAFE" text-anchor="start" dominant-baseline="text-before-edge">12:01  ✓✓</text>
+<rect x="44" y="344" width="520" height="56" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="60" y="356" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Send me the link when you can.</text>
+<text x="60" y="382" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">12:02</text>
+<rect x="156" y="416" width="520" height="56" rx="16" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="172" y="428" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">Done — check your messages.</text>
+<text x="172" y="454" font-family="Segoe UI, Arial, sans-serif" font-size="9" font-weight="400" font-style="" fill="#DBEAFE" text-anchor="start" dominant-baseline="text-before-edge">12:03  ✓✓</text>
+<rect x="40" y="1116" width="640" height="52" rx="26" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="58" y="1133" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">Type a message…</text>
+<circle cx="644" cy="1142" r="18" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="644" y="1132" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">↑</text>
+</svg>

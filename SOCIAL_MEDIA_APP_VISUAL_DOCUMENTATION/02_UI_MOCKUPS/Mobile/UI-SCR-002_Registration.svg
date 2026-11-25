@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="720" height="1280" rx="0" fill="#F5F7FB" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="720" height="426" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<circle cx="360" cy="64" r="30" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="360" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">SC</text>
+<text x="360" y="101" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">SocialConnect</text>
+<text x="360" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="middle" dominant-baseline="central">Connect with people who matter.</text>
+<rect x="29" y="420" width="672" height="786" rx="20" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<rect x="24" y="414" width="672" height="786" rx="20" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="52" y="450" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" font-style="" fill="#0F172A" text-anchor="start" dominant-baseline="text-before-edge">Create your account</text>
+<text x="52" y="492" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">Join SocialConnect to share and stay connected.</text>
+<rect x="52" y="530" width="231" height="22" rx="11" fill="#E8F7EE" stroke="none" stroke-width="1"/>
+<text x="167" y="534" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" font-style="" fill="#16A34A" text-anchor="middle" dominant-baseline="central">UI-SCR-002  |  Registration  |  Implemented</text>
+<text x="52" y="566" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Username</text>
+<rect x="52" y="588" width="616" height="48" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="66" y="603" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">alexmorgan</text>
+<text x="52" y="644" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Email</text>
+<rect x="52" y="666" width="616" height="48" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="66" y="681" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">alex@example.com</text>
+<text x="52" y="722" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Password</text>
+<rect x="52" y="744" width="616" height="48" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="66" y="759" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">••••••••••</text>
+<text x="52" y="800" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Confirm password</text>
+<rect x="52" y="822" width="616" height="48" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="66" y="837" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">••••••••••</text>
+<rect x="52" y="882" width="616" height="52" rx="26" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="360" y="896" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">Create account</text>
+<text x="360" y="952" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Already registered?  Sign in</text>
+</svg>

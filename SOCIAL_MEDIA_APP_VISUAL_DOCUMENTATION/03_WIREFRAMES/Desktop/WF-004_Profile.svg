@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1920" height="1080" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="1920" height="72" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="8" y="8" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">HEADER + SEARCH + PROFILE</text>
+<rect x="20" y="92" width="220" height="968" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="28" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">LEFT NAV</text>
+<rect x="1620" y="92" width="280" height="968" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="1628" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">RIGHT RAIL</text>
+<text x="1900" y="1048" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">WF-004 Profile</text>
+<rect x="260" y="92" width="1320" height="100" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="268" y="100" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">COVER + AVATAR + NAME</text>
+<rect x="260" y="208" width="1320" height="54" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="268" y="216" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">STATS: POSTS / FOLLOWERS / FOLLOWING</text>
+<rect x="260" y="278" width="1320" height="120" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="268" y="286" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">POST GRID OR FEED</text>
+</svg>

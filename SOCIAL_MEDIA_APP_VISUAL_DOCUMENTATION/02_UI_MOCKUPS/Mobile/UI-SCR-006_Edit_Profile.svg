@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="720" height="1280" rx="0" fill="#F5F7FB" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="720" height="66" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="64" width="720" height="2" rx="0" fill="#DCE3EE" stroke="none" stroke-width="1"/>
+<circle cx="32" cy="33" r="16" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="32" y="25" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">SC</text>
+<text x="60" y="16" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#0F172A" text-anchor="start" dominant-baseline="text-before-edge">SocialConnect</text>
+<text x="60" y="38" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">Edit Profile</text>
+<rect x="0" y="1204" width="720" height="76" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="1204" width="720" height="2" rx="0" fill="#DCE3EE" stroke="none" stroke-width="1"/>
+<circle cx="72" cy="1230" r="11" fill="#E0E9FC" stroke="none" stroke-width="1"/>
+<text x="72" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">⌂</text>
+<text x="72" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Home</text>
+<circle cx="216" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="216" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">⌕</text>
+<text x="216" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Explor</text>
+<circle cx="360" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="360" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">◎</text>
+<text x="360" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Friend</text>
+<circle cx="504" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="504" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">✉</text>
+<text x="504" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Messag</text>
+<circle cx="648" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="648" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">♢</text>
+<text x="648" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Notifi</text>
+<rect x="20" y="84" width="225" height="22" rx="11" fill="#E8F7EE" stroke="none" stroke-width="1"/>
+<text x="132" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" font-style="" fill="#16A34A" text-anchor="middle" dominant-baseline="central">UI-SCR-006  |  Edit Profile  |  Implemented</text>
+<rect x="25" y="128" width="680" height="112" rx="16" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<rect x="20" y="122" width="680" height="112" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<circle cx="76" cy="178" r="34" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="76" y="163" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">A</text>
+<rect x="128" y="160" width="138" height="34" rx="17" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="197" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">Change photo</text>
+<rect x="128" y="200" width="138" height="30" rx="15" fill="#F1F5F9" stroke="none" stroke-width="1"/>
+<text x="197" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" font-style="" fill="#334155" text-anchor="middle" dominant-baseline="central">Remove</text>
+<text x="490" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Cover photo</text>
+<rect x="490" y="194" width="170" height="32" rx="16" fill="#F1F5F9" stroke="none" stroke-width="1"/>
+<text x="575" y="203" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#334155" text-anchor="middle" dominant-baseline="central">Upload cover</text>
+<text x="20" y="254" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">First name</text>
+<rect x="20" y="276" width="662" height="46" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="34" y="290" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">Alex</text>
+<text x="20" y="336" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Last name</text>
+<rect x="20" y="358" width="662" height="46" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="34" y="372" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">Morgan</text>
+<text x="20" y="418" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Bio</text>
+<rect x="20" y="440" width="662" height="46" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="34" y="454" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">Product designer and part-time trail runner.</text>
+<text x="20" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Location</text>
+<rect x="20" y="522" width="662" height="46" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="34" y="536" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">Jakarta, Indonesia</text>
+<text x="20" y="582" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Website</text>
+<rect x="20" y="604" width="662" height="46" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="34" y="618" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">https://alexmorgan.dev</text>
+<text x="20" y="664" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Privacy</text>
+<rect x="20" y="686" width="662" height="46" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="34" y="700" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">Followers can see my posts</text>
+<text x="20" y="754" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Permissions</text>
+<text x="20" y="784" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Who can comment</text>
+<rect x="20" y="806" width="662" height="44" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="34" y="819" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">Followers</text>
+<text x="20" y="866" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Who can message</text>
+<rect x="20" y="888" width="662" height="44" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="2"/>
+<text x="34" y="901" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#172033" text-anchor="start" dominant-baseline="central">Followers</text>
+<rect x="560" y="1136" width="128" height="40" rx="20" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="624" y="1147" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">Save changes</text>
+</svg>

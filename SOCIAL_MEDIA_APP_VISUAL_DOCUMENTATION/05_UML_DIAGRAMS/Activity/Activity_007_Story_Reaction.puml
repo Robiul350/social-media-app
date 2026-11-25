@@ -1,0 +1,11 @@
+@startuml
+title Story Reaction Activity
+start
+:SPA has no reaction control;
+:Backend POST /react/ available;
+if (Reaction exists?) then (yes)
+:Create or update StoryReaction;
+:Emit notification on every POST;
+endif
+stop
+@enduml

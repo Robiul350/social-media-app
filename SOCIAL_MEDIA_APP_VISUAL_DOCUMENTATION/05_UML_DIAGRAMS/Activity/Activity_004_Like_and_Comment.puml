@@ -1,0 +1,11 @@
+@startuml
+title Like and Comment Activity
+start
+:Open post;
+if (Like or comment?) then (yes)
+:Toggle Like;
+:Create Comment/reply + mentions;
+:create_notification();
+endif
+stop
+@enduml

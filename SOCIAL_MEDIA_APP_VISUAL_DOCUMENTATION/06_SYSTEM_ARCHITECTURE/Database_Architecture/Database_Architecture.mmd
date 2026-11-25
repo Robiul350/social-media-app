@@ -1,0 +1,14 @@
+%% Database Architecture
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  api["DRF views"]
+  access["social/access.py<br/>• application filtering"]
+  tables["26 app tables<br/>• BigAutoField IDs"]
+  constraints["Unique + check constraints<br/>• no RLS"]
+  media["Media files<br/>• direct URLs"]
+  blacklist["JWT blacklist<br/>• SimpleJWT"]
+  api --> access
+  access --> tables
+  tables --> constraints
+  api --> media
+  api --> blacklist

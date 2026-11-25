@@ -1,0 +1,49 @@
+%% Complete Entity-Relationship Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  DB_TBL_001["User<br/>• id<br/>• username UQ<br/>• email UQ<br/>• email_verified"]
+  DB_TBL_002["Profile<br/>• user 1-1<br/>• is_private<br/>• allow_comments<br/>• allow_messages"]
+  DB_TBL_003["Story<br/>• author FK<br/>• privacy<br/>• expires_at<br/>• media"]
+  DB_TBL_004["StoryView<br/>• story FK<br/>• viewer FK<br/>• UQ(story,viewer)"]
+  DB_TBL_005["StoryReaction<br/>• story FK<br/>• user FK<br/>• 7 types<br/>• UQ(user,story)"]
+  DB_TBL_006["AdminAction<br/>• inert model<br/>• no actor<br/>• no writer"]
+  DB_TBL_007["Post<br/>• author FK<br/>• audience<br/>• is_draft<br/>• scheduled_for"]
+  DB_TBL_008["PostImage<br/>• post FK<br/>• image<br/>• position<br/>• no writer"]
+  DB_TBL_009["Bookmark<br/>• post FK<br/>• user FK<br/>• UQ(post,user)"]
+  DB_TBL_010["Poll<br/>• post 1-1<br/>• question<br/>• expires_at"]
+  DB_TBL_011["PollOption<br/>• poll FK<br/>• text"]
+  DB_TBL_012["PollVote<br/>• option FK<br/>• user FK<br/>• UQ(option,user)"]
+  DB_TBL_013["Hashtag<br/>• name UQ<br/>• M2M Post"]
+  DB_TBL_014["PostReport<br/>• post FK<br/>• reporter FK<br/>• no status"]
+  DB_TBL_015["Like<br/>• post FK<br/>• user FK<br/>• UQ(post,user)"]
+  DB_TBL_016["Comment<br/>• post FK<br/>• user FK<br/>• parent self-FK"]
+  DB_TBL_017["Mention<br/>• comment FK<br/>• post FK<br/>• mentioned FK"]
+  DB_TBL_018["CommentReaction<br/>• comment FK<br/>• user FK<br/>• 6 types"]
+  DB_TBL_019["Follow<br/>• follower FK<br/>• following FK<br/>• UQ direction"]
+  DB_TBL_020["Block<br/>• blocker FK<br/>• blocked FK<br/>• self-check"]
+  DB_TBL_021["FriendRequest<br/>• sender FK<br/>• receiver FK<br/>• status"]
+  DB_TBL_022["Notification<br/>• recipient FK<br/>• sender FK<br/>• type<br/>• is_read"]
+  DB_TBL_023["NotificationPreference<br/>• user 1-1<br/>• 8 booleans"]
+  DB_TBL_024["GroupConversation<br/>• created_by FK<br/>• name<br/>• M2M members"]
+  DB_TBL_025["GroupMembership<br/>• group FK<br/>• user FK<br/>• role<br/>• muted/archived"]
+  DB_TBL_026["Message<br/>• sender FK<br/>• receiver FK<br/>• group FK<br/>• deleted_at"]
+  DB_TBL_001 ---|"1—1"| DB_TBL_002
+  DB_TBL_001 ---|"1—N"| DB_TBL_007
+  DB_TBL_001 ---|"1—N"| DB_TBL_003
+  DB_TBL_003 ---|"1—N"| DB_TBL_004
+  DB_TBL_003 ---|"1—N"| DB_TBL_005
+  DB_TBL_007 ---|"1—N"| DB_TBL_008
+  DB_TBL_007 ---|"1—1"| DB_TBL_010
+  DB_TBL_010 ---|"1—N"| DB_TBL_011
+  DB_TBL_011 ---|"1—N"| DB_TBL_012
+  DB_TBL_007 ---|"M—N"| DB_TBL_013
+  DB_TBL_007 ---|"1—N"| DB_TBL_016
+  DB_TBL_007 ---|"1—N"| DB_TBL_015
+  DB_TBL_001 ---|"1—N"| DB_TBL_019
+  DB_TBL_001 ---|"1—N"| DB_TBL_020
+  DB_TBL_001 ---|"1—N"| DB_TBL_021
+  DB_TBL_001 ---|"1—N"| DB_TBL_022
+  DB_TBL_001 ---|"1—1"| DB_TBL_023
+  DB_TBL_024 ---|"1—N"| DB_TBL_025
+  DB_TBL_026 ---|"N—1 group"| DB_TBL_024
+  DB_TBL_001 ---|"1—N sender"| DB_TBL_026

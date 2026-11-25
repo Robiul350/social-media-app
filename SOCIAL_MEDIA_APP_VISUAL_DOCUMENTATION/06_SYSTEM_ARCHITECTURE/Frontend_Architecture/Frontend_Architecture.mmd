@@ -1,0 +1,19 @@
+%% Frontend Architecture
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  main["main.jsx → App.jsx<br/>• router + guards"]
+  pages["Pages (14 routes)<br/>• auth/feed/profile/chat"]
+  components["Shared components<br/>• AppShell/navbar/actions"]
+  api["Axios client<br/>• Bearer + refresh"]
+  store["Profile store<br/>• subscribe/load/reset"]
+  ws["WS clients<br/>• chat/notifications"]
+  sw["Service worker<br/>• app shell only"]
+  css["index.css tokens<br/>• light/dark"]
+  main --> pages
+  main --> components
+  pages --> api
+  components --> api
+  components --> store
+  components --> ws
+  main --> sw
+  components --> css

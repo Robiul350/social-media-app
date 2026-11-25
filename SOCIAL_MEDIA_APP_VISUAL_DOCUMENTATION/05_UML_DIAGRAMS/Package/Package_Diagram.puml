@@ -1,0 +1,32 @@
+@startuml
+title Package Diagram
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle "frontend/src" as frontend
+rectangle "pages/" as pages
+rectangle "components/" as components
+rectangle "api/" as api
+rectangle "hooks/" as hooks
+rectangle "backend" as backend
+rectangle "config/" as config
+rectangle "users/" as users
+rectangle "posts/" as posts
+rectangle "social/" as social
+rectangle "chat/" as chat
+rectangle "notifications/" as notifications
+rectangle "templates/admin + static/admin" as adminpkg
+rectangle "migrations in five apps" as migrations
+frontend --> pages
+frontend --> components
+frontend --> api
+frontend --> hooks
+backend --> config
+backend --> users
+backend --> posts
+backend --> social
+backend --> chat
+backend --> notifications
+backend --> adminpkg
+backend --> migrations
+@enduml

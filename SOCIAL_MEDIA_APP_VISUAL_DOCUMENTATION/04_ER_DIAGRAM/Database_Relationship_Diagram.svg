@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">Database Relationship Diagram</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">Relationship cardinality and direction from current model foreign keys and many-to-many fields.</text>
+<text x="1876" y="1037" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<rect x="35" y="156" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="30" y="150" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="46" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">User</text>
+<text x="46" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-001</text>
+<text x="46" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• id</text>
+<text x="46" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• username UQ</text>
+<rect x="345" y="156" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="340" y="150" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="356" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Profile</text>
+<text x="356" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-002</text>
+<text x="356" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user 1-1</text>
+<text x="356" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• is_private</text>
+<rect x="655" y="156" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="650" y="150" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="666" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Story</text>
+<text x="666" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-003</text>
+<text x="666" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• author FK</text>
+<text x="666" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• privacy</text>
+<rect x="965" y="156" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="960" y="150" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="976" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">StoryView</text>
+<text x="976" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-004</text>
+<text x="976" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• story FK</text>
+<text x="976" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• viewer FK</text>
+<rect x="1275" y="156" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1270" y="150" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1286" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">StoryReaction</text>
+<text x="1286" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-005</text>
+<text x="1286" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• story FK</text>
+<text x="1286" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="1585" y="156" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1580" y="150" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1596" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">AdminAction</text>
+<text x="1596" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-006</text>
+<text x="1596" y="212" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• inert model</text>
+<text x="1596" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• no actor</text>
+<rect x="35" y="396" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="30" y="390" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="46" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Post</text>
+<text x="46" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-007</text>
+<text x="46" y="452" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• author FK</text>
+<text x="46" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• audience</text>
+<rect x="345" y="396" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="340" y="390" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="356" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">PostImage</text>
+<text x="356" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-008</text>
+<text x="356" y="452" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<text x="356" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• image</text>
+<rect x="655" y="396" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="650" y="390" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="666" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Bookmark</text>
+<text x="666" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-009</text>
+<text x="666" y="452" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<text x="666" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="965" y="396" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="960" y="390" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="976" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Poll</text>
+<text x="976" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-010</text>
+<text x="976" y="452" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post 1-1</text>
+<text x="976" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• question</text>
+<rect x="1275" y="396" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1270" y="390" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1286" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">PollOption</text>
+<text x="1286" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-011</text>
+<text x="1286" y="452" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• poll FK</text>
+<text x="1286" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• text</text>
+<rect x="1585" y="396" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1580" y="390" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1596" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">PollVote</text>
+<text x="1596" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-012</text>
+<text x="1596" y="452" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• option FK</text>
+<text x="1596" y="470" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="35" y="636" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="30" y="630" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="46" y="644" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Hashtag</text>
+<text x="46" y="672" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-013</text>
+<text x="46" y="692" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• name UQ</text>
+<text x="46" y="710" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• M2M Post</text>
+<rect x="345" y="636" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="340" y="630" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="356" y="644" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">PostReport</text>
+<text x="356" y="672" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-014</text>
+<text x="356" y="692" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<text x="356" y="710" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• reporter FK</text>
+<rect x="655" y="636" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="650" y="630" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="666" y="644" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Like</text>
+<text x="666" y="672" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-015</text>
+<text x="666" y="692" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<text x="666" y="710" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="965" y="636" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="960" y="630" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="976" y="644" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Comment</text>
+<text x="976" y="672" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-016</text>
+<text x="976" y="692" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<text x="976" y="710" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="1275" y="636" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1270" y="630" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1286" y="644" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Mention</text>
+<text x="1286" y="672" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-017</text>
+<text x="1286" y="692" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• comment FK</text>
+<text x="1286" y="710" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• post FK</text>
+<rect x="1585" y="636" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1580" y="630" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1596" y="644" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">CommentReaction</text>
+<text x="1596" y="672" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-018</text>
+<text x="1596" y="692" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• comment FK</text>
+<text x="1596" y="710" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="35" y="876" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="30" y="870" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="46" y="884" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Follow</text>
+<text x="46" y="912" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-019</text>
+<text x="46" y="932" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• follower FK</text>
+<text x="46" y="950" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• following FK</text>
+<rect x="345" y="876" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="340" y="870" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="356" y="884" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Block</text>
+<text x="356" y="912" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-020</text>
+<text x="356" y="932" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• blocker FK</text>
+<text x="356" y="950" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• blocked FK</text>
+<rect x="655" y="876" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="650" y="870" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="666" y="884" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">FriendRequest</text>
+<text x="666" y="912" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-021</text>
+<text x="666" y="932" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• sender FK</text>
+<text x="666" y="950" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• receiver FK</text>
+<rect x="965" y="876" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="960" y="870" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="976" y="884" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Notification</text>
+<text x="976" y="912" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-022</text>
+<text x="976" y="932" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• recipient FK</text>
+<text x="976" y="950" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• sender FK</text>
+<rect x="1275" y="876" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1270" y="870" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1286" y="884" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">NotificationPreference</text>
+<text x="1286" y="912" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-023</text>
+<text x="1286" y="932" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user 1-1</text>
+<text x="1286" y="950" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• 8 booleans</text>
+<rect x="1585" y="876" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1580" y="870" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1596" y="884" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">GroupConversation</text>
+<text x="1596" y="912" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-024</text>
+<text x="1596" y="932" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• created_by FK</text>
+<text x="1596" y="950" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• name</text>
+<rect x="35" y="1116" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="30" y="1110" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="46" y="1124" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">GroupMembership</text>
+<text x="46" y="1152" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-025</text>
+<text x="46" y="1172" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• group FK</text>
+<text x="46" y="1190" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• user FK</text>
+<rect x="345" y="1116" width="270" height="130" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="340" y="1110" width="270" height="130" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="356" y="1124" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Message</text>
+<text x="356" y="1152" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">DB-TBL-026</text>
+<text x="356" y="1172" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• sender FK</text>
+<text x="356" y="1190" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• receiver FK</text>
+<polyline points="300,215 340,215" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="340,215 330,219 330,210" fill="#64748B" stroke="none"/>
+<polygon points="300,215 309,210 309,219" fill="#64748B" stroke="none"/>
+<rect x="300" y="203" width="39" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="320" y="207" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—1</text>
+<polyline points="165,280 165,390" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="165,390 160,380 169,380" fill="#64748B" stroke="none"/>
+<polygon points="165,280 169,289 160,289" fill="#64748B" stroke="none"/>
+<rect x="144" y="323" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="165" y="327" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="300,215 650,215" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="650,215 640,219 640,210" fill="#64748B" stroke="none"/>
+<polygon points="300,215 309,210 309,219" fill="#64748B" stroke="none"/>
+<rect x="454" y="203" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="475" y="207" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="920,215 960,215" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="960,215 950,219 950,210" fill="#64748B" stroke="none"/>
+<polygon points="920,215 929,210 929,219" fill="#64748B" stroke="none"/>
+<rect x="919" y="203" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="940" y="207" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="920,215 1270,215" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1270,215 1260,219 1260,210" fill="#64748B" stroke="none"/>
+<polygon points="920,215 929,210 929,219" fill="#64748B" stroke="none"/>
+<rect x="1074" y="203" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1095" y="207" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="300,455 340,455" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="340,455 330,459 330,450" fill="#64748B" stroke="none"/>
+<polygon points="300,455 309,450 309,459" fill="#64748B" stroke="none"/>
+<rect x="299" y="443" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="320" y="447" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="300,455 960,455" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="960,455 950,459 950,450" fill="#64748B" stroke="none"/>
+<polygon points="300,455 309,450 309,459" fill="#64748B" stroke="none"/>
+<rect x="610" y="443" width="39" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="630" y="447" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—1</text>
+<polyline points="1230,455 1270,455" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1270,455 1260,459 1260,450" fill="#64748B" stroke="none"/>
+<polygon points="1230,455 1239,450 1239,459" fill="#64748B" stroke="none"/>
+<rect x="1229" y="443" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1250" y="447" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="1540,455 1580,455" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1580,455 1570,459 1570,450" fill="#64748B" stroke="none"/>
+<polygon points="1540,455 1549,450 1549,459" fill="#64748B" stroke="none"/>
+<rect x="1539" y="443" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1560" y="447" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="165,520 165,630" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="165,630 160,620 169,620" fill="#64748B" stroke="none"/>
+<polygon points="165,520 169,529 160,529" fill="#64748B" stroke="none"/>
+<rect x="141" y="563" width="46" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="165" y="567" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">M—N</text>
+<polyline points="300,455 960,695" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="960,695 949,696 952,687" fill="#64748B" stroke="none"/>
+<polygon points="300,455 310,453 307,462" fill="#64748B" stroke="none"/>
+<rect x="609" y="563" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="630" y="567" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="1095,630 1095,760" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1095,760 1090,750 1099,750" fill="#64748B" stroke="none"/>
+<polygon points="1095,630 1099,639 1090,639" fill="#64748B" stroke="none"/>
+<rect x="1058" y="683" width="72" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1095" y="687" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">self replies</text>
+<polyline points="300,455 650,695" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="650,695 639,693 644,685" fill="#64748B" stroke="none"/>
+<polygon points="300,455 310,456 305,464" fill="#64748B" stroke="none"/>
+<rect x="454" y="563" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="475" y="567" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="165,280 165,870" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="165,870 160,860 169,860" fill="#64748B" stroke="none"/>
+<polygon points="165,280 169,289 160,289" fill="#64748B" stroke="none"/>
+<rect x="144" y="563" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="165" y="567" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="165,280 475,870" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="475,870 466,863 474,859" fill="#64748B" stroke="none"/>
+<polygon points="165,280 173,286 165,290" fill="#64748B" stroke="none"/>
+<rect x="299" y="563" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="320" y="567" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="165,280 785,870" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="785,870 774,866 781,859" fill="#64748B" stroke="none"/>
+<polygon points="165,280 175,283 168,290" fill="#64748B" stroke="none"/>
+<rect x="454" y="563" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="475" y="567" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="300,215 960,935" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="960,935 949,930 956,924" fill="#64748B" stroke="none"/>
+<polygon points="300,215 310,219 303,225" fill="#64748B" stroke="none"/>
+<rect x="609" y="563" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="630" y="567" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="300,215 1270,935" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1270,935 1259,932 1264,925" fill="#64748B" stroke="none"/>
+<polygon points="300,215 310,217 305,224" fill="#64748B" stroke="none"/>
+<rect x="765" y="563" width="39" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="785" y="567" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—1</text>
+<polyline points="1580,935 300,1175" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="300,1175 308,1168 310,1177" fill="#64748B" stroke="none"/>
+<polygon points="1580,935 1571,941 1569,932" fill="#64748B" stroke="none"/>
+<rect x="919" y="1043" width="41" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="940" y="1047" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N</text>
+<polyline points="610,1175 1580,935" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1580,935 1571,942 1569,932" fill="#64748B" stroke="none"/>
+<polygon points="610,1175 618,1167 620,1177" fill="#64748B" stroke="none"/>
+<rect x="1054" y="1043" width="80" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1095" y="1047" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">N—1 group</text>
+<polyline points="165,280 475,1110" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="475,1110 467,1102 476,1099" fill="#64748B" stroke="none"/>
+<polygon points="165,280 172,287 163,290" fill="#64748B" stroke="none"/>
+<rect x="278" y="683" width="83" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="320" y="687" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1—N sender</text>
+<rect x="40" y="958" width="1840" height="62" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="60" y="972" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="60" y="994" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Self-relations are labelled. PollVote DB uniqueness is per option only; Message has no receiver/group exclusive constraint.</text>
+</svg>

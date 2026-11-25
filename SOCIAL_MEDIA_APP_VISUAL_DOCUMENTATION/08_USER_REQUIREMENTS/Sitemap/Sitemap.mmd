@@ -1,0 +1,30 @@
+%% Sitemap
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  root["/ home"]
+  login["/login"]
+  register["/register"]
+  search["/search"]
+  edit["/edit-profile"]
+  messages["/messages/:userId"]
+  notif["/notifications"]
+  friends["/friend-requests"]
+  conn["/connections/:section"]
+  book["/bookmarks"]
+  post["/posts/:postId"]
+  profile["/users/:userId"]
+  admin["/admin/ (Django)"]
+  proposed["Proposed only: /explore, /settings, /forgot-password, /groups, /polls, moderation<br/>• not active routes"]
+  root --> search
+  root --> edit
+  root --> messages
+  root --> notif
+  root --> book
+  root --> post
+  root --> profile
+  login --> root
+  register --> login
+  root --> friends
+  root --> conn
+  root --> admin
+  root -.->|"proposed"| proposed

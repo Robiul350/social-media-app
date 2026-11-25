@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">Use Case Diagram</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">Actors and 33 source-derived use cases. Backend-only cases remain labelled as such in documentation.</text>
+<text x="1876" y="1037" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<rect x="255" y="146" width="1360" height="820" rx="12" fill="#D0D2D4" stroke="none" stroke-width="1"/>
+<rect x="250" y="140" width="1360" height="820" rx="12" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="266" y="154" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Social Media App system boundary</text>
+<text x="266" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">SYSTEM BOUNDARY</text>
+<rect x="35" y="196" width="180" height="90" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="30" y="190" width="180" height="90" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="60" cy="224" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="82" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Guest</text>
+<rect x="35" y="366" width="180" height="90" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="30" y="360" width="180" height="90" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="60" cy="394" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="82" y="378" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Registered User</text>
+<rect x="35" y="536" width="180" height="90" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="30" y="530" width="180" height="90" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="60" cy="564" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="82" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Content Author</text>
+<rect x="35" y="706" width="180" height="90" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="30" y="700" width="180" height="90" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="60" cy="734" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="82" y="718" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Message</text>
+<text x="82" y="737" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Participant</text>
+<rect x="1645" y="196" width="220" height="90" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="1640" y="190" width="220" height="90" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="1670" cy="224" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="1692" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Administrator</text>
+<rect x="1645" y="366" width="220" height="90" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="1640" y="360" width="220" height="90" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="1670" cy="394" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="1692" y="378" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Group Member</text>
+<rect x="1645" y="536" width="220" height="90" rx="12" fill="#CACED1" stroke="none" stroke-width="1"/>
+<rect x="1640" y="530" width="220" height="90" rx="12" fill="#F1F5F9" stroke="#475569" stroke-width="2"/>
+<text x="1656" y="544" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">External System</text>
+<rect x="275" y="186" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="270" y="180" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="286" y="194" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-001 Register account</text>
+<rect x="543" y="186" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="538" y="180" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="554" y="194" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-002 Login and receive</text>
+<text x="554" y="214" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">JWT</text>
+<rect x="811" y="186" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="806" y="180" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="822" y="194" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-003 Refresh access</text>
+<text x="822" y="214" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">token</text>
+<rect x="1079" y="186" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1074" y="180" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1090" y="194" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-004 Logout / blacklist</text>
+<text x="1090" y="214" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">refresh</text>
+<rect x="1347" y="186" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1342" y="180" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1358" y="194" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-005 Request password</text>
+<text x="1358" y="214" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">reset</text>
+<rect x="275" y="304" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="270" y="298" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="286" y="312" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-006 Confirm password</text>
+<text x="286" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">reset</text>
+<rect x="543" y="304" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="538" y="298" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="554" y="312" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-007 Deactivate account</text>
+<rect x="811" y="304" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="806" y="298" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="822" y="312" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-008 Edit own profile and</text>
+<text x="822" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">privacy</text>
+<rect x="1079" y="304" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1074" y="298" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1090" y="312" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-009 Search and discover</text>
+<text x="1090" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">people</text>
+<rect x="1347" y="304" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1342" y="298" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1358" y="312" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-010 View public profile</text>
+<rect x="275" y="422" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="270" y="416" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="286" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-011 Create/edit/delete</text>
+<text x="286" y="450" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">post</text>
+<rect x="543" y="422" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="538" y="416" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="554" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-012 Browse filtered feed</text>
+<rect x="811" y="422" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="806" y="416" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="822" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-013 Like post</text>
+<rect x="1079" y="422" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1074" y="416" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1090" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-014 Comment and reply</text>
+<rect x="1347" y="422" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1342" y="416" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1358" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-015 Bookmark post</text>
+<rect x="275" y="540" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="270" y="534" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="286" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-016 Pin/repost/report</text>
+<text x="286" y="568" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">post</text>
+<rect x="543" y="540" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="538" y="534" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="554" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-017 Create and view</text>
+<text x="554" y="568" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">story</text>
+<rect x="811" y="540" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="806" y="534" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="822" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-018 React to story</text>
+<rect x="1079" y="540" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1074" y="534" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1090" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-019 Follow / unfollow</text>
+<text x="1090" y="568" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">user</text>
+<rect x="1347" y="540" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1342" y="534" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1358" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-020 Friend request</text>
+<text x="1358" y="568" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">lifecycle</text>
+<rect x="275" y="658" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="270" y="652" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="286" y="666" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-021 Block / unblock user</text>
+<rect x="543" y="658" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="538" y="652" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="554" y="666" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-022 Manage</text>
+<text x="554" y="686" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">notification preferences</text>
+<rect x="811" y="658" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="806" y="652" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="822" y="666" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-023 Read notifications</text>
+<text x="822" y="686" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">and counts</text>
+<rect x="1079" y="658" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1074" y="652" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1090" y="666" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-024 Send direct</text>
+<text x="1090" y="686" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">message</text>
+<rect x="1347" y="658" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1342" y="652" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1358" y="666" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-025</text>
+<text x="1358" y="686" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Typing/presence/read</text>
+<text x="1358" y="706" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">events</text>
+<rect x="275" y="776" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="270" y="770" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="286" y="784" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-026 Create group</text>
+<text x="286" y="804" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">conversation</text>
+<rect x="543" y="776" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="538" y="770" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="554" y="784" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-027 Send group</text>
+<text x="554" y="804" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">message</text>
+<rect x="811" y="776" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="806" y="770" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="822" y="784" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-028 Vote in poll</text>
+<rect x="1079" y="776" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1074" y="770" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1090" y="784" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-029 Submit post report</text>
+<rect x="1347" y="776" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1342" y="770" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1358" y="784" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-030 Review admin</text>
+<text x="1358" y="804" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">analytics</text>
+<rect x="275" y="894" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="270" y="888" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="286" y="902" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-031 Manage users via</text>
+<text x="286" y="922" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">admin</text>
+<rect x="543" y="894" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="538" y="888" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="554" y="902" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-032 Mark notifications</text>
+<text x="554" y="922" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">read in admin</text>
+<rect x="811" y="894" width="250" height="86" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="806" y="888" width="250" height="86" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="822" y="902" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UC-033 View system status</text>
+<polyline points="210,235 270,223" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="270,223 261,229 259,220" fill="#64748B" stroke="none"/>
+<polyline points="210,235 538,223" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="538,223 528,228 527,218" fill="#64748B" stroke="none"/>
+<polyline points="210,235 1342,223" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1342,223 1332,227 1332,218" fill="#64748B" stroke="none"/>
+<polyline points="210,235 270,341" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="270,341 260,334 269,330" fill="#64748B" stroke="none"/>
+<polyline points="210,405 806,341" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="806,341 796,346 795,337" fill="#64748B" stroke="none"/>
+<polyline points="210,405 538,459" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="538,459 527,462 529,452" fill="#64748B" stroke="none"/>
+<polyline points="210,405 806,459" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="806,459 795,462 796,453" fill="#64748B" stroke="none"/>
+<polyline points="210,405 806,695" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="806,695 795,694 799,686" fill="#64748B" stroke="none"/>
+<polyline points="210,575 270,459" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="270,459 269,469 261,465" fill="#64748B" stroke="none"/>
+<polyline points="210,575 270,577" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="270,577 259,581 260,571" fill="#64748B" stroke="none"/>
+<polyline points="210,575 1074,813" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1074,813 1063,814 1065,805" fill="#64748B" stroke="none"/>
+<polyline points="210,745 1074,695" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1074,695 1064,700 1063,690" fill="#64748B" stroke="none"/>
+<polyline points="210,745 1342,695" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1342,695 1332,700 1331,690" fill="#64748B" stroke="none"/>
+<polyline points="1750,280 1467,770" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1467,770 1467,759 1476,763" fill="#64748B" stroke="none"/>
+<polyline points="1640,235 520,931" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="520,931 525,921 530,929" fill="#64748B" stroke="none"/>
+<polyline points="1640,235 788,931" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="788,931 792,921 798,928" fill="#64748B" stroke="none"/>
+<polyline points="1640,235 1056,931" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1056,931 1058,920 1066,926" fill="#64748B" stroke="none"/>
+<polyline points="1640,405 520,813" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="520,813 527,805 530,814" fill="#64748B" stroke="none"/>
+<polyline points="1640,405 788,813" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="788,813 794,804 798,813" fill="#64748B" stroke="none"/>
+<polyline points="1640,575 788,459" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="788,459 798,455 797,465" fill="#64748B" stroke="none"/>
+<rect x="1132" y="505" width="163" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1214" y="509" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">PostgreSQL / Redis / email</text>
+<polyline points="788,223 806,223" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="806,223 796,227 796,218" fill="#64748B" stroke="none"/>
+<rect x="730" y="211" width="132" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="797" y="215" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">&lt;&lt;include&gt;&gt; on 401</text>
+<polyline points="520,459 1074,813" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="1074,813 1063,811 1068,803" fill="#64748B" stroke="none"/>
+<rect x="734" y="624" width="125" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="797" y="628" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">&lt;&lt;extend&gt;&gt; report</text>
+<polyline points="788,577 806,577" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="806,577 796,581 796,572" fill="#64748B" stroke="none"/>
+<rect x="713" y="565" width="166" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="797" y="569" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">&lt;&lt;extend&gt;&gt; backend only</text>
+<rect x="40" y="958" width="1840" height="62" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="60" y="972" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="60" y="994" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Administrator is the Django admin actor; no SPA moderation workflow exists. Email delivery is [NOT VERIFIED - USER CONFIRMATION REQUIRED].</text>
+</svg>

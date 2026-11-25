@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant Viewer
+    participant No_SPA_control
+    participant DRF_API
+    participant Notification_utility
+    participant PostgreSQL
+    Viewer->>No_SPA_control: Backend endpoint available only
+    DRF_API->>DRF_API: POST stories/<id>/react/ [API-024]
+    DRF_API->>PostgreSQL: Upsert StoryReaction
+    DRF_API->>Notification_utility: create_notification(story_reaction)
+    Notification_utility->>PostgreSQL: Persist; on_commit publish
+    DRF_API->>No_SPA_control: 201/200 StoryReactionSerializer

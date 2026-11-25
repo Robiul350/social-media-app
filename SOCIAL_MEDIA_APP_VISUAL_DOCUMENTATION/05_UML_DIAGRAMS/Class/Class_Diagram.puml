@@ -1,0 +1,60 @@
+@startuml
+title Class Diagram
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle "User\nusername\nemail\nis_staff\nis_active" as class_User
+rectangle "Profile\nis_private\nallow_comments\nallow_messages\nprivacy fields" as class_Profile
+rectangle "Post\ncontent\nimage\nvideo\naudience" as class_Post
+rectangle "Story\nmedia\ntext\nprivacy\nexpires_at" as class_Story
+rectangle "StoryView\nstory\nviewer\nviewed_at\nunique pair" as class_StoryView
+rectangle "StoryReaction\nuser\nstory\nreaction_type\n7 choices" as class_StoryReaction
+rectangle "Like\npost\nuser\ncreated_at\nunique pair" as class_Like
+rectangle "Comment\npost\nuser\nparent\ncontent" as class_Comment
+rectangle "Mention\nmentioned\ncreated_at\nregex extraction" as class_Mention
+rectangle "CommentReaction\ncomment\nuser\nreaction\nno UI" as class_CommentReaction
+rectangle "Follow\nfollower\nfollowing\nunique direction" as class_Follow
+rectangle "Block\nblocker\nblocked\nself-check" as class_Block
+rectangle "FriendRequest\nsender\nreceiver\nstatus\naccept/reject" as class_FriendRequest
+rectangle "Notification\nrecipient\nsender\npost\ncomment" as class_Notification
+rectangle "NotificationPreference\n8 booleans\nopt-outs" as class_NotificationPreference
+rectangle "Poll\nquestion\nexpires_at\nno CRUD" as class_Poll
+rectangle "PollOption\ntext\nvote target" as class_PollOption
+rectangle "PollVote\nuser\noption\nview-level guard" as class_PollVote
+rectangle "Bookmark\npost\nuser\nunique pair" as class_Bookmark
+rectangle "Hashtag\nname\nregex sync" as class_Hashtag
+rectangle "PostReport\npost\nreporter\nreason\nno status" as class_PostReport
+rectangle "PostImage\npost\nimage\nposition\nno writer" as class_PostImage
+rectangle "GroupConversation\nname\ncreated_by\navatar\nREST only" as class_GroupConversation
+rectangle "GroupMembership\ngroup\nuser\nrole\nmuted/archived unused" as class_GroupMembership
+rectangle "Message\nsender\nreceiver\ngroup\ndeleted_at" as class_Message
+rectangle "AdminAction\naction_type\ntarget_type\nmetadata\nno writer" as class_AdminAction
+rectangle "APISerializer\nvalidate\ncreate\nupdate\npermission-aware output" as class_APISerializer
+rectangle "APIView\nget\npost\npatch\ndelete" as class_APIView
+rectangle "ChatConsumer\nconnect\nreceive\ndisconnect\nJWT query token" as class_ChatConsumer
+rectangle "NotificationConsumer\ngroup_add\nreceive\nclient frame translation" as class_NotificationConsumer
+class_User --> class_Profile : 1—1
+class_User --> class_Post : 1—N
+class_User --> class_Story : 1—N
+class_Story --> class_StoryView : 1—N
+class_Story --> class_StoryReaction : 1—N
+class_Post --> class_Like : 1—N
+class_Post --> class_Comment : 1—N
+class_Post --> class_Poll : 1—1
+class_Poll --> class_PollOption : 1—N
+class_PollOption --> class_PollVote : 1—N
+class_Post --> class_Hashtag : M—N
+class_Comment --> class_Mention : 1—N
+class_Comment --> class_CommentReaction : 1—N
+class_User --> class_Follow : 1—N
+class_User --> class_Block : 1—N
+class_User --> class_FriendRequest : 1—N
+class_User --> class_Notification : 1—N
+class_User --> class_NotificationPreference : 1—1
+class_GroupConversation --> class_GroupMembership : 1—N
+class_Message --> class_GroupConversation : N—1
+class_APIView --> class_APISerializer : uses
+class_APISerializer --> class_Post : serializes
+class_ChatConsumer --> class_Message : persists
+class_NotificationConsumer --> class_Notification : broadcasts
+@enduml

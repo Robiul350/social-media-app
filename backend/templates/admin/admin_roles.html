@@ -1,0 +1,70 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block nav-sidebar %}
+{% include "admin/nav_sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="sc-dashboard sc-custom-page">
+    <header class="sc-welcome">
+        <div>
+            <p class="sc-eyebrow">GOVERNANCE</p>
+            <h2>Roles &amp; Permissions</h2>
+            <p>Administrative access is enforced by Django's existing staff, superuser, group, and model-permission system.</p>
+        </div>
+        <a class="sc-primary-link" href="{{ group_admin_url }}">Manage groups <span aria-hidden="true">→</span></a>
+    </header>
+
+    <section class="sc-role-grid" aria-label="Current administrator access">
+        <article class="sc-dashboard-panel sc-role-card">
+            <h2>Your access</h2>
+            <dl>
+                <div><dt>Account type</dt><dd>{% if is_superuser %}Superuser{% elif is_staff %}Staff{% else %}Member{% endif %}</dd></div>
+                <div><dt>Assigned labels</dt><dd>{% for label in role_labels %}<span class="sc-role-chip">{{ label }}</span>{% empty %}<span class="sc-muted-cell">None</span>{% endfor %}</dd></div>
+                <div><dt>Direct permissions</dt><dd>{{ direct_permission_count }}</dd></div>
+                <div><dt>Admin access</dt><dd><span class="sc-status-pill">{% if is_staff %}Granted{% else %}Not granted{% endif %}</span></dd></div>
+            </dl>
+        </article>
+        <article class="sc-dashboard-panel sc-role-card">
+            <h2>How roles work here</h2>
+            <p>SocialConnect does not create automatic application roles. Existing Django groups are the source of truth for reusable permission sets.</p>
+            <ul class="sc-fact-list">
+                <li>Staff status gates access to this admin site.</li>
+                <li>Superuser status grants all model permissions.</li>
+                <li>Group and user permissions are managed through Django's existing admin forms.</li>
+                <li>This page displays access only; it does not grant or change privileges.</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="sc-dashboard-panel sc-table-panel">
+        <header class="sc-table-heading">
+            <div>
+                <h2>Configured groups</h2>
+                <p>Real Django groups, member counts, and permission counts</p>
+            </div>
+            <a class="sc-view-all" href="{{ user_admin_url }}">Manage users <span aria-hidden="true">→</span></a>
+        </header>
+        {% if permission_groups %}
+        <div class="sc-table-scroll">
+            <table class="sc-dashboard-table sc-role-table">
+                <thead><tr><th>Group</th><th>Members</th><th>Permissions</th><th>Action</th></tr></thead>
+                <tbody>
+                    {% for group in permission_groups %}
+                    <tr>
+                        <td><strong>{{ group.name }}</strong></td>
+                        <td>{{ group.user_count }}</td>
+                        <td>{{ group.permission_count }}</td>
+                        <td class="sc-action-column"><a class="sc-row-action" href="{{ group_admin_url }}{{ group.pk }}/change/">Manage</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="sc-empty-state">No Django groups have been configured.</p>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}

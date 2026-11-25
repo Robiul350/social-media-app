@@ -1,0 +1,11 @@
+@startuml
+title Notification Activity
+start
+:Domain view calls create_notification;
+if (Self/blocked/preference off?) then (yes)
+:Persist Notification;
+:on_commit publish notification.created;
+:Consumer sends client frame;
+endif
+stop
+@enduml

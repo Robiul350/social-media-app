@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">User Requirement Diagram</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">UR IDs from User_Requirements.md grouped by source-verified domain.</text>
+<text x="1876" y="1037" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<rect x="45" y="186" width="180" height="90" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="40" y="180" width="180" height="90" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="70" cy="214" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="92" y="198" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Guest</text>
+<rect x="45" y="426" width="180" height="90" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="40" y="420" width="180" height="90" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="70" cy="454" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="92" y="438" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Registered User</text>
+<rect x="45" y="666" width="180" height="90" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="40" y="660" width="180" height="90" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="70" cy="694" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="92" y="678" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Admin</text>
+<rect x="305" y="156" width="320" height="110" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="300" y="150" width="320" height="110" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="316" y="164" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UR-001—007 Identity</text>
+<text x="316" y="192" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• register/login/reset</text>
+<rect x="305" y="306" width="320" height="110" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="300" y="300" width="320" height="110" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="316" y="314" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UR-008—010 Profile</text>
+<rect x="305" y="456" width="320" height="110" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="300" y="450" width="320" height="110" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="316" y="464" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UR-011—016 Content</text>
+<rect x="305" y="606" width="320" height="110" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="300" y="600" width="320" height="110" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="316" y="614" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UR-019—021 Social</text>
+<rect x="705" y="306" width="320" height="110" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="700" y="300" width="320" height="110" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="716" y="314" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UR-022—028 Real time</text>
+<text x="716" y="342" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• notifications/chat/polls</text>
+<rect x="705" y="606" width="320" height="110" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="700" y="600" width="320" height="110" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="716" y="614" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">UR-030—032 Admin</text>
+<polyline points="220,225 300,205" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="300,205 291,212 289,202" fill="#64748B" stroke="none"/>
+<polyline points="220,465 300,355" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="300,355 298,365 290,360" fill="#64748B" stroke="none"/>
+<polyline points="220,465 300,505" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="300,505 289,504 293,496" fill="#64748B" stroke="none"/>
+<polyline points="220,465 300,655" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="300,655 291,647 300,644" fill="#64748B" stroke="none"/>
+<polyline points="220,465 700,355" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="700,355 691,361 689,352" fill="#64748B" stroke="none"/>
+<polyline points="220,705 700,655" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="700,655 690,660 689,651" fill="#64748B" stroke="none"/>
+<rect x="40" y="958" width="1840" height="62" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="60" y="972" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="60" y="994" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Proposed screens do not change requirement status; backend-only items remain backend only.</text>
+</svg>

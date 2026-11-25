@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="720" height="1280" rx="0" fill="#F5F7FB" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="720" height="66" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="64" width="720" height="2" rx="0" fill="#DCE3EE" stroke="none" stroke-width="1"/>
+<circle cx="32" cy="33" r="16" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="32" y="25" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">SC</text>
+<text x="60" y="16" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#0F172A" text-anchor="start" dominant-baseline="text-before-edge">SocialConnect</text>
+<text x="60" y="38" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">Home</text>
+<rect x="0" y="1204" width="720" height="76" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="1204" width="720" height="2" rx="0" fill="#DCE3EE" stroke="none" stroke-width="1"/>
+<circle cx="72" cy="1230" r="11" fill="#E0E9FC" stroke="none" stroke-width="1"/>
+<text x="72" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">⌂</text>
+<text x="72" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Home</text>
+<circle cx="216" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="216" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">⌕</text>
+<text x="216" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Explor</text>
+<circle cx="360" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="360" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">◎</text>
+<text x="360" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Friend</text>
+<circle cx="504" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="504" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">✉</text>
+<text x="504" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Messag</text>
+<circle cx="648" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="648" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">♢</text>
+<text x="648" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Notifi</text>
+<rect x="20" y="84" width="266" height="22" rx="11" fill="#E8F7EE" stroke="none" stroke-width="1"/>
+<text x="153" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" font-style="" fill="#16A34A" text-anchor="middle" dominant-baseline="central">UI-SCR-004  |  Home / News Feed  |  Implemented</text>
+<text x="20" y="122" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Stories</text>
+<circle cx="50" cy="180" r="27" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="50" y="171" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">Y</text>
+<text x="50" y="211" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#475569" text-anchor="middle" dominant-baseline="central">You</text>
+<circle cx="147" cy="180" r="27" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="147" y="171" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">M</text>
+<text x="147" y="211" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#475569" text-anchor="middle" dominant-baseline="central">Maya</text>
+<circle cx="244" cy="180" r="27" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="244" y="171" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">N</text>
+<text x="244" y="211" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#475569" text-anchor="middle" dominant-baseline="central">Noah</text>
+<circle cx="341" cy="180" r="27" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="341" y="171" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">P</text>
+<text x="341" y="211" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#475569" text-anchor="middle" dominant-baseline="central">Priya</text>
+<circle cx="438" cy="180" r="27" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="438" y="171" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">L</text>
+<text x="438" y="211" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#475569" text-anchor="middle" dominant-baseline="central">Liam</text>
+<circle cx="535" cy="180" r="27" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="535" y="171" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">S</text>
+<text x="535" y="211" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#475569" text-anchor="middle" dominant-baseline="central">Sofia</text>
+<circle cx="632" cy="180" r="27" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="632" y="171" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">E</text>
+<text x="632" y="211" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#475569" text-anchor="middle" dominant-baseline="central">Ethan</text>
+<rect x="25" y="246" width="680" height="112" rx="16" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<rect x="20" y="240" width="680" height="112" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<circle cx="54" cy="278" r="20" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="54" y="269" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">A</text>
+<rect x="86" y="258" width="588" height="44" rx="22" fill="#F8FAFC" stroke="#DCE3EE" stroke-width="1"/>
+<text x="102" y="274" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">What&#x27;s happening, Alex?</text>
+<text x="86" y="318" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Photo</text>
+<text x="236" y="318" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Video</text>
+<text x="386" y="318" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">Audience: Public</text>
+<rect x="584" y="310" width="94" height="34" rx="17" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="631" y="320" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">Post</text>
+<rect x="25" y="378" width="680" height="260" rx="16" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<rect x="20" y="372" width="680" height="260" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<circle cx="56" cy="410" r="20" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="56" y="401" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">M</text>
+<text x="86" y="392" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Maya Chen</text>
+<text x="86" y="414" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">2 hours ago  ·  Friends</text>
+<rect x="600" y="392" width="52" height="22" rx="11" fill="#E8F0FE" stroke="none" stroke-width="1"/>
+<text x="626" y="396" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Friends</text>
+<text x="44" y="450" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Weekend hike with the crew. The view was worth every step.</text>
+<rect x="44" y="500" width="632" height="70" rx="12" fill="#F1F5F9" stroke="none" stroke-width="1"/>
+<circle cx="360" cy="535" r="22" fill="#E8F0FE" stroke="none" stroke-width="1"/>
+<text x="360" y="529" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">MEDIA</text>
+<text x="48" y="588" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">♥ 248</text>
+<text x="203" y="588" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">♬ 31</text>
+<text x="358" y="588" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">↗ Share</text>
+<text x="513" y="588" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">▢ Save</text>
+<rect x="25" y="654" width="680" height="220" rx="16" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<rect x="20" y="648" width="680" height="220" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<circle cx="56" cy="686" r="20" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="56" y="677" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">N</text>
+<text x="86" y="668" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Noah Reed</text>
+<text x="86" y="690" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">2 hours ago  ·  Public</text>
+<rect x="600" y="668" width="46" height="22" rx="11" fill="#E8F0FE" stroke="none" stroke-width="1"/>
+<text x="623" y="672" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Public</text>
+<text x="44" y="726" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="400" font-style="" fill="#334155" text-anchor="start" dominant-baseline="text-before-edge">Shipping a new side project tonight. Feedback welcome.</text>
+<rect x="44" y="776" width="632" height="30" rx="12" fill="#F1F5F9" stroke="none" stroke-width="1"/>
+<circle cx="360" cy="791" r="22" fill="#E8F0FE" stroke="none" stroke-width="1"/>
+<text x="360" y="785" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="700" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">MEDIA</text>
+<text x="48" y="824" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">♥ 96</text>
+<text x="203" y="824" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">♬ 14</text>
+<text x="358" y="824" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">↗ Share</text>
+<text x="513" y="824" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">▢ Save</text>
+</svg>

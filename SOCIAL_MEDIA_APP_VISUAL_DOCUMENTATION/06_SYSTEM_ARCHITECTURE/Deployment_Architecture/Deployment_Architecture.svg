@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">Deployment Architecture</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">Verified development topology with production items explicitly unverified.</text>
+<text x="1876" y="1037" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<rect x="65" y="226" width="240" height="110" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="60" y="220" width="240" height="110" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<circle cx="90" cy="254" r="14" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="112" y="238" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Browser</text>
+<rect x="345" y="226" width="260" height="110" rx="12" fill="#C3CFC8" stroke="none" stroke-width="1"/>
+<rect x="340" y="220" width="260" height="110" rx="12" fill="#E8F7EE" stroke="#16A34A" stroke-width="2"/>
+<text x="356" y="234" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Vite dev server</text>
+<rect x="665" y="226" width="280" height="110" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="660" y="220" width="280" height="110" rx="12" fill="#E8F0FE" stroke="#1D4ED8" stroke-width="2"/>
+<text x="676" y="234" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Daphne ASGI</text>
+<text x="676" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• config.asgi:application</text>
+<rect x="1005" y="226" width="260" height="110" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="1000" y="220" width="260" height="110" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="1016" y="234" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">PostgreSQL</text>
+<rect x="1005" y="426" width="260" height="110" rx="12" fill="#CAC4D5" stroke="none" stroke-width="1"/>
+<rect x="1000" y="420" width="260" height="110" rx="12" fill="#F1E9FE" stroke="#7C3AED" stroke-width="2"/>
+<text x="1016" y="434" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Redis optional</text>
+<text x="1016" y="462" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• multi-process</text>
+<rect x="1325" y="226" width="260" height="110" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="1320" y="220" width="260" height="110" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="1336" y="234" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Media storage</text>
+<text x="1336" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• prod [NOT VERIFIED - USER</text>
+<text x="1336" y="277" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">CONFIRMATION REQUIRED]</text>
+<rect x="345" y="446" width="260" height="110" rx="12" fill="#CACED1" stroke="none" stroke-width="1"/>
+<rect x="340" y="440" width="260" height="110" rx="12" fill="#F1F5F9" stroke="#475569" stroke-width="2"/>
+<text x="356" y="454" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Proxy/TLS</text>
+<text x="356" y="482" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• [</text>
+<text x="356" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• N</text>
+<text x="356" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• O</text>
+<rect x="665" y="446" width="280" height="110" rx="12" fill="#CACED1" stroke="none" stroke-width="1"/>
+<rect x="660" y="440" width="280" height="110" rx="12" fill="#F1F5F9" stroke="#475569" stroke-width="2"/>
+<text x="676" y="454" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Monitoring/CI/CD</text>
+<text x="676" y="482" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• [</text>
+<text x="676" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• N</text>
+<text x="676" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• O</text>
+<polyline points="300,275 340,275" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="340,275 330,279 330,270" fill="#64748B" stroke="none"/>
+<rect x="303" y="263" width="32" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="320" y="267" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">dev</text>
+<polyline points="300,275 660,275" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="660,275 650,279 650,270" fill="#64748B" stroke="none"/>
+<rect x="452" y="263" width="55" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="480" y="267" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">API/WS</text>
+<polyline points="940,275 1000,275" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1000,275 990,279 990,270" fill="#64748B" stroke="none"/>
+<polyline points="940,275 1000,475" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1000,475 992,466 1001,464" fill="#64748B" stroke="none"/>
+<polyline points="940,275 1320,275" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1320,275 1310,279 1310,270" fill="#64748B" stroke="none"/>
+<polyline points="600,495 660,275" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="660,275 662,285 652,283" fill="#64748B" stroke="none"/>
+<rect x="478" y="373" width="303" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="630" y="377" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">[NOT VERIFIED - USER CONFIRMATION REQUIRED]</text>
+<polyline points="800,440 800,330" fill="none" stroke="#64748B" stroke-width="2" stroke-dasharray="7 5"/>
+<polygon points="800,330 804,339 795,339" fill="#64748B" stroke="none"/>
+<rect x="648" y="373" width="303" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="800" y="377" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">[NOT VERIFIED - USER CONFIRMATION REQUIRED]</text>
+<rect x="40" y="958" width="1840" height="62" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="60" y="972" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="60" y="994" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Actual technologies and modules only. Any deployment element not present in source retains the exact verification marker.</text>
+</svg>

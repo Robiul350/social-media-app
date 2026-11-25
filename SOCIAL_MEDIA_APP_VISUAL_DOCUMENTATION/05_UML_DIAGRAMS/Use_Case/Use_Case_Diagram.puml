@@ -1,0 +1,70 @@
+@startuml
+title Use Case Diagram
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle "Social Media App system boundary" as system
+rectangle "Guest" as Guest
+rectangle "Registered User" as User
+rectangle "Content Author" as Author
+rectangle "Message Participant" as Member
+rectangle "Administrator" as Admin
+rectangle "Group Member" as GroupMember
+rectangle "External System" as External
+rectangle "UC-001 Register account" as UC_001
+rectangle "UC-002 Login and receive JWT" as UC_002
+rectangle "UC-003 Refresh access token" as UC_003
+rectangle "UC-004 Logout / blacklist refresh" as UC_004
+rectangle "UC-005 Request password reset" as UC_005
+rectangle "UC-006 Confirm password reset" as UC_006
+rectangle "UC-007 Deactivate account" as UC_007
+rectangle "UC-008 Edit own profile and privacy" as UC_008
+rectangle "UC-009 Search and discover people" as UC_009
+rectangle "UC-010 View public profile" as UC_010
+rectangle "UC-011 Create/edit/delete post" as UC_011
+rectangle "UC-012 Browse filtered feed" as UC_012
+rectangle "UC-013 Like post" as UC_013
+rectangle "UC-014 Comment and reply" as UC_014
+rectangle "UC-015 Bookmark post" as UC_015
+rectangle "UC-016 Pin/repost/report post" as UC_016
+rectangle "UC-017 Create and view story" as UC_017
+rectangle "UC-018 React to story" as UC_018
+rectangle "UC-019 Follow / unfollow user" as UC_019
+rectangle "UC-020 Friend request lifecycle" as UC_020
+rectangle "UC-021 Block / unblock user" as UC_021
+rectangle "UC-022 Manage notification preferences" as UC_022
+rectangle "UC-023 Read notifications and counts" as UC_023
+rectangle "UC-024 Send direct message" as UC_024
+rectangle "UC-025 Typing/presence/read events" as UC_025
+rectangle "UC-026 Create group conversation" as UC_026
+rectangle "UC-027 Send group message" as UC_027
+rectangle "UC-028 Vote in poll" as UC_028
+rectangle "UC-029 Submit post report" as UC_029
+rectangle "UC-030 Review admin analytics" as UC_030
+rectangle "UC-031 Manage users via admin" as UC_031
+rectangle "UC-032 Mark notifications read in admin" as UC_032
+rectangle "UC-033 View system status" as UC_033
+Guest --> UC_001
+Guest --> UC_002
+Guest --> UC_005
+Guest --> UC_006
+User --> UC_008
+User --> UC_012
+User --> UC_013
+User --> UC_023
+Author --> UC_011
+Author --> UC_016
+Author --> UC_029
+Member --> UC_024
+Member --> UC_025
+Admin --> UC_030
+Admin --> UC_031
+Admin --> UC_032
+Admin --> UC_033
+GroupMember --> UC_026
+GroupMember --> UC_027
+External ..> UC_012 : PostgreSQL / Redis / email
+UC_002 ..> UC_003 : <<include>> on 401
+UC_011 ..> UC_029 : <<extend>> report
+UC_017 ..> UC_018 : <<extend>> backend only
+@enduml

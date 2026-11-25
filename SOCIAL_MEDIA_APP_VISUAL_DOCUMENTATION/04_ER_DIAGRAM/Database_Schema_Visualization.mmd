@@ -1,0 +1,23 @@
+%% Database Schema Visualization
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  browser["React SPA + Django admin"]
+  api["DRF APIView / generics"]
+  access["social/access.py"]
+  notify["notifications/utils.py"]
+  pg["PostgreSQL"]
+  channel["Channel layer"]
+  ws["Channels consumers"]
+  media["Media storage"]
+  blacklist["JWT blacklist tables"]
+  app_filter["Application-layer visibility"]
+  browser -->|"REST/WS"| api
+  api -->|"visibility"| access
+  api -->|"create_notification"| notify
+  access -->|"filtered queries"| pg
+  notify -->|"persist"| pg
+  notify -->|"on_commit"| channel
+  channel -->|"fan-out"| ws
+  api -->|"uploads"| media
+  api -->|"refresh rotation"| blacklist
+  access -->|"not DB RLS"| app_filter

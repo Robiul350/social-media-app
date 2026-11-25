@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">DFD Level 2 — Authentication</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">External entities, process, data stores, and data flows.</text>
+<text x="1876" y="1037" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<rect x="55" y="246" width="180" height="100" rx="12" fill="#CACED1" stroke="none" stroke-width="1"/>
+<rect x="50" y="240" width="180" height="100" rx="12" fill="#F1F5F9" stroke="#475569" stroke-width="2"/>
+<text x="66" y="254" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Guest</text>
+<rect x="345" y="246" width="300" height="120" rx="12" fill="#C3CFC8" stroke="none" stroke-width="1"/>
+<rect x="340" y="240" width="300" height="120" rx="12" fill="#E8F7EE" stroke="#16A34A" stroke-width="2"/>
+<text x="356" y="254" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">2.1 Identity process</text>
+<text x="356" y="282" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• validate/tokenize</text>
+<rect x="765" y="186" width="280" height="100" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="760" y="180" width="280" height="100" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="776" y="194" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">D1 users_user</text>
+<rect x="765" y="366" width="280" height="100" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="760" y="360" width="280" height="100" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="776" y="374" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">D2 users_profile</text>
+<rect x="765" y="546" width="280" height="100" rx="12" fill="#D6CCBB" stroke="none" stroke-width="1"/>
+<rect x="760" y="540" width="280" height="100" rx="12" fill="#FFF3DF" stroke="#D97706" stroke-width="2"/>
+<text x="776" y="554" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">D3 JWT blacklist</text>
+<rect x="1125" y="366" width="260" height="100" rx="12" fill="#CACED1" stroke="none" stroke-width="1"/>
+<rect x="1120" y="360" width="260" height="100" rx="12" fill="#F1F5F9" stroke="#475569" stroke-width="2"/>
+<text x="1136" y="374" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Email service</text>
+<text x="1136" y="402" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">• [NOT VERIFIED - USER</text>
+<text x="1136" y="417" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">CONFIRMATION REQUIRED]</text>
+<polyline points="230,290 340,300" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="340,300 329,303 330,294" fill="#64748B" stroke="none"/>
+<rect x="248" y="283" width="73" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="285" y="287" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">credentials</text>
+<polyline points="640,300 760,230" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="760,230 753,239 749,230" fill="#64748B" stroke="none"/>
+<polyline points="640,300 760,410" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="760,410 749,406 755,399" fill="#64748B" stroke="none"/>
+<rect x="677" y="343" width="45" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="700" y="347" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">signal</text>
+<polyline points="640,300 760,590" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="760,590 751,582 760,579" fill="#64748B" stroke="none"/>
+<rect x="655" y="433" width="89" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="700" y="437" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">rotate/logout</text>
+<polyline points="640,300 1120,410" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1120,410 1109,412 1111,403" fill="#64748B" stroke="none"/>
+<rect x="859" y="343" width="40" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="880" y="347" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">reset</text>
+<rect x="40" y="958" width="1840" height="62" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="60" y="972" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="60" y="994" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Only source-verified stores and flows are shown.</text>
+</svg>

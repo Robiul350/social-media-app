@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" role="img">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<rect x="0" y="0" width="720" height="1280" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="720" height="64" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="8" y="8" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">HEADER / LOGO / SEARCH</text>
+<rect x="0" y="1206" width="720" height="74" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="8" y="1214" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">BOTTOM NAV</text>
+<text x="700" y="1248" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">WF-009 Notification</text>
+<rect x="16" y="82" width="688" height="68" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">NOTIFICATION 1: ICON / COPY / READ STATE</text>
+<rect x="16" y="166" width="688" height="68" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="174" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">NOTIFICATION 2: ICON / COPY / READ STATE</text>
+<rect x="16" y="250" width="688" height="68" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">NOTIFICATION 3: ICON / COPY / READ STATE</text>
+<rect x="16" y="334" width="688" height="68" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="342" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">NOTIFICATION 4: ICON / COPY / READ STATE</text>
+<rect x="16" y="426" width="688" height="50" rx="4" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+<text x="24" y="434" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">MARK ALL READ / REFRESH</text>
+</svg>

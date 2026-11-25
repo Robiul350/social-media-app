@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="720" height="1280" rx="0" fill="#F5F7FB" stroke="none" stroke-width="1"/>
+<rect x="0" y="0" width="720" height="66" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="64" width="720" height="2" rx="0" fill="#DCE3EE" stroke="none" stroke-width="1"/>
+<circle cx="32" cy="33" r="16" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="32" y="25" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">SC</text>
+<text x="60" y="16" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#0F172A" text-anchor="start" dominant-baseline="text-before-edge">SocialConnect</text>
+<text x="60" y="38" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">Following</text>
+<rect x="0" y="1204" width="720" height="76" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<rect x="0" y="1204" width="720" height="2" rx="0" fill="#DCE3EE" stroke="none" stroke-width="1"/>
+<circle cx="72" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="72" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">⌂</text>
+<text x="72" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Home</text>
+<circle cx="216" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="216" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">⌕</text>
+<text x="216" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Explor</text>
+<circle cx="360" cy="1230" r="11" fill="#E0E9FC" stroke="none" stroke-width="1"/>
+<text x="360" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">◎</text>
+<text x="360" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Friend</text>
+<circle cx="504" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="504" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">✉</text>
+<text x="504" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Messag</text>
+<circle cx="648" cy="1230" r="11" fill="#E9ECEF" stroke="none" stroke-width="1"/>
+<text x="648" y="1218" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">♢</text>
+<text x="648" y="1250" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">Notifi</text>
+<rect x="20" y="84" width="245" height="22" rx="11" fill="#E8F7EE" stroke="none" stroke-width="1"/>
+<text x="142" y="88" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" font-style="" fill="#16A34A" text-anchor="middle" dominant-baseline="central">UI-SCR-016  |  Following Page  |  Implemented</text>
+<rect x="20" y="122" width="218" height="44" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="129" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="middle" dominant-baseline="central">Friends</text>
+<rect x="246" y="122" width="218" height="44" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="355" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#475569" text-anchor="middle" dominant-baseline="central">Followers</text>
+<rect x="472" y="122" width="218" height="44" rx="10" fill="#E8F0FE" stroke="#DCE3EE" stroke-width="1"/>
+<text x="581" y="136" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Following</text>
+<rect x="25" y="192" width="680" height="62" rx="16" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<rect x="20" y="186" width="680" height="62" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<circle cx="56" cy="217" r="20" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="56" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">N</text>
+<text x="88" y="204" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Noah Reed</text>
+<text x="88" y="224" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">@noah  ·  Mutual: 8</text>
+<rect x="596" y="201" width="84" height="32" rx="16" fill="#F1F5F9" stroke="none" stroke-width="1"/>
+<text x="638" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#334155" text-anchor="middle" dominant-baseline="central">Following</text>
+<rect x="25" y="268" width="680" height="62" rx="16" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<rect x="20" y="262" width="680" height="62" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<circle cx="56" cy="293" r="20" fill="#0891B2" stroke="none" stroke-width="1"/>
+<text x="56" y="284" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">P</text>
+<text x="88" y="280" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Priya Shah</text>
+<text x="88" y="300" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">@priya  ·  Mutual: 9</text>
+<rect x="596" y="277" width="84" height="32" rx="16" fill="#F1F5F9" stroke="none" stroke-width="1"/>
+<text x="638" y="286" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#334155" text-anchor="middle" dominant-baseline="central">Following</text>
+<rect x="25" y="344" width="680" height="62" rx="16" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<rect x="20" y="338" width="680" height="62" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<circle cx="56" cy="369" r="20" fill="#16A34A" stroke="none" stroke-width="1"/>
+<text x="56" y="360" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">L</text>
+<text x="88" y="356" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Liam Brown</text>
+<text x="88" y="376" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">@liam  ·  Mutual: 10</text>
+<rect x="596" y="353" width="84" height="32" rx="16" fill="#F1F5F9" stroke="none" stroke-width="1"/>
+<text x="638" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#334155" text-anchor="middle" dominant-baseline="central">Following</text>
+<rect x="25" y="420" width="680" height="62" rx="16" fill="#D6D6D6" stroke="none" stroke-width="1"/>
+<rect x="20" y="414" width="680" height="62" rx="16" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<circle cx="56" cy="445" r="20" fill="#7C3AED" stroke="none" stroke-width="1"/>
+<text x="56" y="436" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">E</text>
+<text x="88" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Ethan Park</text>
+<text x="88" y="452" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="400" font-style="" fill="#64748B" text-anchor="start" dominant-baseline="text-before-edge">@ethan  ·  Mutual: 11</text>
+<rect x="596" y="429" width="84" height="32" rx="16" fill="#F1F5F9" stroke="none" stroke-width="1"/>
+<text x="638" y="438" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#334155" text-anchor="middle" dominant-baseline="central">Following</text>
+</svg>

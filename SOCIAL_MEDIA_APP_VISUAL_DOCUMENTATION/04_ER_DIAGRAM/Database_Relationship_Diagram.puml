@@ -1,0 +1,53 @@
+@startuml
+title Database Relationship Diagram
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle "User\nid\nusername UQ" as DB_TBL_001
+rectangle "Profile\nuser 1-1\nis_private" as DB_TBL_002
+rectangle "Story\nauthor FK\nprivacy" as DB_TBL_003
+rectangle "StoryView\nstory FK\nviewer FK" as DB_TBL_004
+rectangle "StoryReaction\nstory FK\nuser FK" as DB_TBL_005
+rectangle "AdminAction\ninert model\nno actor" as DB_TBL_006
+rectangle "Post\nauthor FK\naudience" as DB_TBL_007
+rectangle "PostImage\npost FK\nimage" as DB_TBL_008
+rectangle "Bookmark\npost FK\nuser FK" as DB_TBL_009
+rectangle "Poll\npost 1-1\nquestion" as DB_TBL_010
+rectangle "PollOption\npoll FK\ntext" as DB_TBL_011
+rectangle "PollVote\noption FK\nuser FK" as DB_TBL_012
+rectangle "Hashtag\nname UQ\nM2M Post" as DB_TBL_013
+rectangle "PostReport\npost FK\nreporter FK" as DB_TBL_014
+rectangle "Like\npost FK\nuser FK" as DB_TBL_015
+rectangle "Comment\npost FK\nuser FK" as DB_TBL_016
+rectangle "Mention\ncomment FK\npost FK" as DB_TBL_017
+rectangle "CommentReaction\ncomment FK\nuser FK" as DB_TBL_018
+rectangle "Follow\nfollower FK\nfollowing FK" as DB_TBL_019
+rectangle "Block\nblocker FK\nblocked FK" as DB_TBL_020
+rectangle "FriendRequest\nsender FK\nreceiver FK" as DB_TBL_021
+rectangle "Notification\nrecipient FK\nsender FK" as DB_TBL_022
+rectangle "NotificationPreference\nuser 1-1\n8 booleans" as DB_TBL_023
+rectangle "GroupConversation\ncreated_by FK\nname" as DB_TBL_024
+rectangle "GroupMembership\ngroup FK\nuser FK" as DB_TBL_025
+rectangle "Message\nsender FK\nreceiver FK" as DB_TBL_026
+DB_TBL_001 --- DB_TBL_002 : 1—1
+DB_TBL_001 --- DB_TBL_007 : 1—N
+DB_TBL_001 --- DB_TBL_003 : 1—N
+DB_TBL_003 --- DB_TBL_004 : 1—N
+DB_TBL_003 --- DB_TBL_005 : 1—N
+DB_TBL_007 --- DB_TBL_008 : 1—N
+DB_TBL_007 --- DB_TBL_010 : 1—1
+DB_TBL_010 --- DB_TBL_011 : 1—N
+DB_TBL_011 --- DB_TBL_012 : 1—N
+DB_TBL_007 --- DB_TBL_013 : M—N
+DB_TBL_007 --- DB_TBL_016 : 1—N
+DB_TBL_016 --- DB_TBL_016 : self replies
+DB_TBL_007 --- DB_TBL_015 : 1—N
+DB_TBL_001 --- DB_TBL_019 : 1—N
+DB_TBL_001 --- DB_TBL_020 : 1—N
+DB_TBL_001 --- DB_TBL_021 : 1—N
+DB_TBL_001 --- DB_TBL_022 : 1—N
+DB_TBL_001 --- DB_TBL_023 : 1—1
+DB_TBL_024 --- DB_TBL_025 : 1—N
+DB_TBL_026 --- DB_TBL_024 : N—1 group
+DB_TBL_001 --- DB_TBL_026 : 1—N sender
+@enduml

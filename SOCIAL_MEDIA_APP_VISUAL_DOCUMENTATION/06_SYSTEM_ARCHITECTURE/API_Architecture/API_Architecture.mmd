@@ -1,0 +1,17 @@
+%% API Communication Architecture
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  client["SPA / admin"]
+  axios["Axios interceptor<br/>• Bearer token<br/>• 401 refresh"]
+  jwt["SimpleJWT<br/>• rotate/blacklist"]
+  rest["DRF APIView/generics<br/>• no ViewSets"]
+  wsauth["JWT middleware<br/>• query-string token"]
+  ws["Channels consumers<br/>• chat/notifications"]
+  db["PostgreSQL"]
+  client --> axios
+  axios --> jwt
+  jwt --> rest
+  rest --> db
+  client -->|"WebSocket"| wsauth
+  wsauth --> ws
+  ws --> db

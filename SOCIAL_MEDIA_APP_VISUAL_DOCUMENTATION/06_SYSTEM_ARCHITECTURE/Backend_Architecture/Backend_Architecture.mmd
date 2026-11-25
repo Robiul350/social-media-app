@@ -1,0 +1,23 @@
+%% Backend Architecture
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  urls["config/urls.py<br/>• 5 API prefixes"]
+  users["users app"]
+  posts["posts app"]
+  social["social app"]
+  chat["chat app"]
+  notifications["notifications app"]
+  access["social/access.py<br/>• visibility centrally"]
+  notifyutil["notifications/utils.py<br/>• on_commit publish"]
+  admin["Custom admin<br/>• metrics/analytics"]
+  pg["PostgreSQL"]
+  urls --> users
+  urls --> posts
+  urls --> social
+  urls --> chat
+  urls --> notifications
+  social --> access
+  notifications --> notifyutil
+  access --> pg
+  notifyutil --> pg
+  admin --> pg

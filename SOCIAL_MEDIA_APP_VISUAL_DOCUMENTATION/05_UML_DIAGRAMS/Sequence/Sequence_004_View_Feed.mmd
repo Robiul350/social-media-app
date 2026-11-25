@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant User
+    participant home.jsx
+    participant DRF_API
+    participant social/access.py
+    participant PostgreSQL
+    User->>home.jsx: Open /
+    home.jsx->>DRF_API: GET /api/social/feed/?page=1 [API-040]
+    DRF_API->>social/access.py: Audience/block/private filters
+    social/access.py->>PostgreSQL: Query visible posts
+    DRF_API->>home.jsx: Paginated object
+    home.jsx->>User: IntersectionObserver loads next page

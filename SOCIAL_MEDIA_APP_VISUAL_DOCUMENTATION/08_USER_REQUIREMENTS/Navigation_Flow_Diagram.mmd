@@ -1,0 +1,22 @@
+%% Navigation Flow Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  shell["AppShell / navbar<br/>• three-zone desktop<br/>• drawer + bottom nav"]
+  home["Home"]
+  search["Search"]
+  friends["Friends/Connections"]
+  messages["Messages"]
+  notif["Notifications"]
+  profile["My profile"]
+  detail["Post detail"]
+  edit["Edit profile"]
+  dialog["Notification settings dialog"]
+  shell --> home
+  shell --> search
+  shell --> friends
+  shell --> messages
+  shell --> notif
+  shell --> profile
+  home --> detail
+  profile --> edit
+  notif --> dialog

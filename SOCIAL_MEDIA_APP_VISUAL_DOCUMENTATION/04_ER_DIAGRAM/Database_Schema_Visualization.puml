@@ -1,0 +1,26 @@
+@startuml
+title Database Schema Visualization
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle "React SPA + Django admin" as browser
+rectangle "DRF APIView / generics" as api
+rectangle "social/access.py" as access
+rectangle "notifications/utils.py" as notify
+rectangle "PostgreSQL" as pg
+rectangle "Channel layer" as channel
+rectangle "Channels consumers" as ws
+rectangle "Media storage" as media
+rectangle "JWT blacklist tables" as blacklist
+rectangle "Application-layer visibility" as app_filter
+browser --> api : REST/WS
+api --> access : visibility
+api --> notify : create_notification
+access --> pg : filtered queries
+notify --> pg : persist
+notify --> channel : on_commit
+channel --> ws : fan-out
+api --> media : uploads
+api --> blacklist : refresh rotation
+access --> app_filter : not DB RLS
+@enduml

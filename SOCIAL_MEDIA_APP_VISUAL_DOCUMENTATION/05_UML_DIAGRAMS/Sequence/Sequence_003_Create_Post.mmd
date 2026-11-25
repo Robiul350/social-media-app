@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant Author
+    participant home.jsx_composer
+    participant DRF_API
+    participant PostSerializer
+    participant PostgreSQL
+    Author->>home.jsx_composer: Text/media/audience
+    home.jsx_composer->>DRF_API: POST /api/posts/ [API-031] multipart
+    DRF_API->>PostSerializer: Validate content/media and sizes
+    PostSerializer->>PostgreSQL: Create Post; sync hashtags
+    DRF_API->>home.jsx_composer: 201 PostSerializer
+    home.jsx_composer->>Author: Refresh feed or prepend post

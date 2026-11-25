@@ -1,0 +1,20 @@
+%% Object Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  user1[":User id=12<br/>• username=alexmorgan<br/>• email=alex@example.com"]
+  profile1[":Profile<br/>• is_private=false<br/>• allow_messages=followers"]
+  post1[":Post id=88<br/>• audience=friends<br/>• is_draft=false"]
+  comment1[":Comment<br/>• parent=null<br/>• content=..."]
+  notif1[":Notification<br/>• type=like<br/>• is_read=false"]
+  msg1[":Message<br/>• receiver_id=19<br/>• deleted_at=null"]
+  story1[":Story<br/>• privacy=public<br/>• expires_at=+24h"]
+  react1[":StoryReaction<br/>• reaction_type=love"]
+  prefs[":NotificationPreference<br/>• likes=true<br/>• mentions=true"]
+  user1 -->|"profile"| profile1
+  user1 -->|"author"| post1
+  post1 -->|"comments"| comment1
+  post1 -->|"target"| notif1
+  user1 -->|"sender"| msg1
+  user1 -->|"author"| story1
+  story1 -->|"reactions"| react1
+  user1 -->|"preferences"| prefs

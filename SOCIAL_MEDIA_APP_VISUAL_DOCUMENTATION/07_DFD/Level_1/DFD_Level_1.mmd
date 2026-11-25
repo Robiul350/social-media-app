@@ -1,0 +1,29 @@
+%% DFD Level 1
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  user["User"]
+  admin["Admin"]
+  p1["1.0 Identity & Profile"]
+  p2["2.0 Content & Feed"]
+  p3["3.0 Social Interaction"]
+  p4["4.0 Messaging"]
+  p5["5.0 Notifications"]
+  p6["6.0 Administration"]
+  d1["D1 User/Profile/Content"]
+  d2["D2 Social tables"]
+  d3["D3 Messages/Notifications"]
+  d4["D4 Channel layer"]
+  user --> p1
+  user --> p2
+  user --> p3
+  user --> p4
+  user --> p5
+  admin --> p6
+  p1 --> d1
+  p2 --> d1
+  p3 --> d2
+  p4 --> d3
+  p5 --> d3
+  p5 --> d4
+  p6 --> d1
+  p6 --> d2

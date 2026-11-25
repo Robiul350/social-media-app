@@ -1,0 +1,11 @@
+@startuml
+title Post Creation Activity
+start
+:Compose text/media/audience;
+if (Content or media present?) then (yes)
+if (Within file-size limits?) then (yes)
+:POST /api/posts/;
+:Sync hashtags; persist;
+endif
+stop
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+title Component Diagram
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle "React SPA\npages/components\nrouter/theme\ndialogs" as spa
+rectangle "Axios API client\nBearer injection\nsingle-flight refresh" as axios
+rectangle "Profile store\nsnapshot/subscribe\nin-flight de-dup" as store
+rectangle "WebSocket clients\nchat + notifications\nreconnect/backoff" as wsclient
+rectangle "Service worker\napp-shell precache\nnetwork-first nav" as sw
+rectangle "Django HTTP / DRF\n5 API prefixes\nserializers/permissions" as drf
+rectangle "social/access.py\naudience/block\nprivate/visibility" as access
+rectangle "notifications/utils.py\npreference/block\non_commit publish" as notifyutil
+rectangle "Channels consumers\nchat protocol\nnotification protocol" as consumers
+rectangle "Custom Django admin\ndashboard/analytics\nroles/system" as admin
+rectangle "PostgreSQL\nsystem of record\nJWT blacklist" as pg
+rectangle "Channel layer\nRedis if REDIS_URL\nelse in-memory" as channel
+rectangle "Media storage\nMEDIA_ROOT\nprod host unverified" as media
+rectangle "Email service\npassword reset\n[NOT VERIFIED - USER CONFIRMATION REQUIRED]" as email
+spa --> axios
+spa --> store
+spa --> wsclient
+spa --> sw
+axios --> drf : REST
+wsclient --> consumers : WS
+drf --> access
+drf --> notifyutil
+drf --> pg
+drf --> media
+notifyutil --> channel
+channel --> consumers
+consumers --> pg
+admin --> pg
+drf --> email
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+title Story Creation Activity
+start
+:Choose media/text/privacy;
+if (Media ≤25 MB?) then (yes)
+:POST /api/users/stories/;
+:Set expires_at = now + 24 h;
+endif
+stop
+@enduml

@@ -1,0 +1,14 @@
+%% DFD Level 2 — Chat
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  sender["Sender"]
+  receiver["Receiver"]
+  p["2.4 Chat process<br/>• REST + WS"]
+  d1["D1 chat_message"]
+  d2["D2 Channel layer"]
+  d3["D3 Notifications"]
+  sender --> p
+  p -->|"frames"| receiver
+  p --> d1
+  p --> d2
+  p --> d3

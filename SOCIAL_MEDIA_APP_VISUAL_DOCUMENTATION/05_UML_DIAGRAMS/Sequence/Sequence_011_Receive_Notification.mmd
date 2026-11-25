@@ -1,0 +1,13 @@
+sequenceDiagram
+    participant Domain_view
+    participant PostgreSQL
+    participant Channel_layer
+    participant NotificationConsumer
+    participant Notifications.jsx
+    participant Recipient
+    Domain_view->>PostgreSQL: Persist Notification
+    Domain_view->>Channel_layer: on_commit notification.created
+    Channel_layer->>NotificationConsumer: Group notifications_<id>
+    NotificationConsumer->>Notifications.jsx: {"type":"notification",...}
+    Notifications.jsx->>Recipient: Prepend item; refresh count locally
+    Recipient->>Notifications.jsx: Mark read: DB/local only

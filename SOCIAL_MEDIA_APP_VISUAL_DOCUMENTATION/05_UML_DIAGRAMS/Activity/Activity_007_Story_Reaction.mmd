@@ -1,0 +1,14 @@
+flowchart TD
+  n0[Start]
+  n1[SPA has no reaction control]
+  n2[Backend POST /react/ available]
+  n3[Reaction exists?]
+  n4[Create or update StoryReaction]
+  n5[Emit notification on every POST]
+  n6[End]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6

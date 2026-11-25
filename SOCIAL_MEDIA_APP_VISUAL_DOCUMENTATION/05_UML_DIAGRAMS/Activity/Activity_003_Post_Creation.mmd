@@ -1,0 +1,14 @@
+flowchart TD
+  n0[Start]
+  n1[Compose text/media/audience]
+  n2[Content or media present?]
+  n3[Within file-size limits?]
+  n4[POST /api/posts/]
+  n5[Sync hashtags; persist]
+  n6[End]
+  n0 --> n1
+  n1 --> n2
+  n2 --> n3
+  n3 --> n4
+  n4 --> n5
+  n5 --> n6

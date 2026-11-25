@@ -1,0 +1,23 @@
+%% Deployment Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  browser["Browser<br/>• React SPA<br/>• Django admin"]
+  vite["Vite dev server<br/>• dev/build/preview"]
+  django["Django ASGI<br/>• config.asgi:application<br/>• Daphne for WS"]
+  drf["DRF / Channels<br/>• 5 prefixes<br/>• 2 consumers"]
+  pg["PostgreSQL<br/>• mandatory<br/>• blacklist tables"]
+  redis["Redis channel layer<br/>• if REDIS_URL set<br/>• multi-process fan-out"]
+  memory["In-memory layer<br/>• default fallback<br/>• single-process"]
+  media["Media storage<br/>• MEDIA_ROOT<br/>• dev served if DEBUG"]
+  email["Email provider<br/>• reset links"]
+  proxy["Reverse proxy / TLS<br/>• not found in source"]
+  browser -->|"dev SPA"| vite
+  browser -->|"API/WS"| django
+  vite -->|"proxy in dev"| django
+  django --> drf
+  drf --> pg
+  drf -->|"if configured"| redis
+  drf -->|"otherwise"| memory
+  drf --> media
+  drf -->|"password reset"| email
+  proxy -.->|"[NOT VERIFIED - USER CONFIRMATION REQUIRED]"| django

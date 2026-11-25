@@ -1,0 +1,71 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block nav-sidebar %}
+{% include "admin/nav_sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="sc-dashboard sc-custom-page">
+    <header class="sc-welcome">
+        <div>
+            <p class="sc-eyebrow">SYSTEM</p>
+            <h2>System Settings</h2>
+            <p>Verifiable runtime facts for this deployment. Credentials, keys, and token values are never displayed here.</p>
+        </div>
+        <a class="sc-primary-link" href="{% url 'admin:password_change' %}">Account settings <span aria-hidden="true">→</span></a>
+    </header>
+
+    <section class="sc-status-grid" aria-label="System status">
+        <article class="sc-dashboard-panel sc-status-card">
+            <span class="sc-status-icon sc-status-ok" aria-hidden="true">{% if database_ok %}✓{% else %}!{% endif %}</span>
+            <div><span>Database</span><strong>{{ database_status }}</strong><small>{{ database_vendor }} connection checked now</small></div>
+        </article>
+        <article class="sc-dashboard-panel sc-status-card">
+            <span class="sc-status-icon sc-status-neutral" aria-hidden="true">⌁</span>
+            <div><span>Redis cache</span><strong>{% if redis_configured %}Configured{% else %}Not configured{% endif %}</strong><small>Channel layer backend: {{ channel_backend }}</small></div>
+        </article>
+        <article class="sc-dashboard-panel sc-status-card">
+            <span class="sc-status-icon sc-status-neutral" aria-hidden="true">↗</span>
+            <div><span>WebSockets</span><strong>{{ websocket_status }}</strong><small>{{ asgi_application }}</small></div>
+        </article>
+        <article class="sc-dashboard-panel sc-status-card">
+            <span class="sc-status-icon sc-status-neutral" aria-hidden="true">◇</span>
+            <div><span>Debug mode</span><strong>{% if debug_enabled %}Enabled{% else %}Disabled{% endif %}</strong><small>Runtime configuration</small></div>
+        </article>
+    </section>
+
+    <div class="sc-notice" role="status">
+        <strong>Configuration source.</strong> Deployed settings are managed through environment variables and server configuration. This page reports state without exposing secrets or making changes.
+    </div>
+
+    <section class="sc-dashboard-panel sc-table-panel">
+        <header class="sc-table-heading">
+            <div>
+                <h2>Recent admin activity</h2>
+                <p>Real Django admin CRUD events recorded in the audit log</p>
+            </div>
+            <a class="sc-view-all" href="{{ log_admin_url }}">View all activity <span aria-hidden="true">→</span></a>
+        </header>
+        {% if recent_admin_activity %}
+        <div class="sc-table-scroll">
+            <table class="sc-dashboard-table sc-activity-table">
+                <thead><tr><th>Time</th><th>Admin</th><th>Action</th><th>Object</th></tr></thead>
+                <tbody>
+                    {% for entry in recent_admin_activity %}
+                    <tr>
+                        <td>{{ entry.action_time|date:"M j, Y H:i" }}</td>
+                        <td class="sc-muted-cell">{{ entry.user.username }}</td>
+                        <td>{{ entry.get_action_flag_display }}</td>
+                        <td class="sc-post-copy">{{ entry.object_repr|truncatechars:90 }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="sc-empty-state">No admin changes have been recorded yet.</p>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}

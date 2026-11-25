@@ -1,0 +1,32 @@
+%% Component Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  spa["React SPA<br/>• pages/components<br/>• router/theme<br/>• dialogs"]
+  axios["Axios API client<br/>• Bearer injection<br/>• single-flight refresh"]
+  store["Profile store<br/>• snapshot/subscribe<br/>• in-flight de-dup"]
+  wsclient["WebSocket clients<br/>• chat + notifications<br/>• reconnect/backoff"]
+  sw["Service worker<br/>• app-shell precache<br/>• network-first nav"]
+  drf["Django HTTP / DRF<br/>• 5 API prefixes<br/>• serializers/permissions"]
+  access["social/access.py<br/>• audience/block<br/>• private/visibility"]
+  notifyutil["notifications/utils.py<br/>• preference/block<br/>• on_commit publish"]
+  consumers["Channels consumers<br/>• chat protocol<br/>• notification protocol"]
+  admin["Custom Django admin<br/>• dashboard/analytics<br/>• roles/system"]
+  pg["PostgreSQL<br/>• system of record<br/>• JWT blacklist"]
+  channel["Channel layer<br/>• Redis if REDIS_URL<br/>• else in-memory"]
+  media["Media storage<br/>• MEDIA_ROOT<br/>• prod host unverified"]
+  email["Email service<br/>• password reset<br/>• [NOT VERIFIED - USER CONFIRMATION REQUIRED]"]
+  spa --> axios
+  spa --> store
+  spa --> wsclient
+  spa --> sw
+  axios -->|"REST"| drf
+  wsclient -->|"WS"| consumers
+  drf --> access
+  drf --> notifyutil
+  drf --> pg
+  drf --> media
+  notifyutil --> channel
+  channel --> consumers
+  consumers --> pg
+  admin --> pg
+  drf --> email

@@ -1,0 +1,17 @@
+%% API Testing Flow
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  client["API test client"]
+  auth["Obtain JWT"]
+  request["Send REST request"]
+  perm["Permission + access.py"]
+  serializer["Serializer validation"]
+  db["PostgreSQL"]
+  assert["Assert response/state"]
+  client --> auth
+  auth -->|"Bearer"| request
+  request --> perm
+  request --> serializer
+  perm --> db
+  serializer --> db
+  db --> assert

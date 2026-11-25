@@ -1,0 +1,12 @@
+%% DFD Level 2 — Notification
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  domain["Domain view"]
+  p["2.5 Notification process<br/>• preferences/block"]
+  d1["D1 notifications_*"]
+  d2["D2 Channel layer"]
+  user["Recipient SPA"]
+  domain --> p
+  p --> d1
+  p -->|"on_commit"| d2
+  d2 -->|"client frame"| user

@@ -1,0 +1,20 @@
+%% Stakeholder Diagram
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  guest["Guest"]
+  user["Registered User"]
+  admin["Admin"]
+  external["External System"]
+  system["System outcome<br/>• source-verified value"]
+  access["Account access"]
+  engage["Content engagement"]
+  moderate["Platform oversight"]
+  infra["Persistence/delivery"]
+  guest --> access
+  user --> engage
+  admin --> moderate
+  external --> infra
+  access --> system
+  engage --> system
+  moderate --> system
+  infra --> system

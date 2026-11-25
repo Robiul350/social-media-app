@@ -1,0 +1,26 @@
+@startuml
+title Deployment Diagram
+left to right direction
+skinparam rectangleBackgroundColor #E8F0FE
+skinparam rectangleBorderColor #2563EB
+rectangle "Browser\nReact SPA\nDjango admin" as browser
+rectangle "Vite dev server\ndev/build/preview" as vite
+rectangle "Django ASGI\nconfig.asgi:application\nDaphne for WS" as django
+rectangle "DRF / Channels\n5 prefixes\n2 consumers" as drf
+rectangle "PostgreSQL\nmandatory\nblacklist tables" as pg
+rectangle "Redis channel layer\nif REDIS_URL set\nmulti-process fan-out" as redis
+rectangle "In-memory layer\ndefault fallback\nsingle-process" as memory
+rectangle "Media storage\nMEDIA_ROOT\ndev served if DEBUG" as media
+rectangle "Email provider\nreset links" as email
+rectangle "Reverse proxy / TLS\nnot found in source" as proxy
+browser --> vite : dev SPA
+browser --> django : API/WS
+vite --> django : proxy in dev
+django --> drf
+drf --> pg
+drf --> redis : if configured
+drf --> memory : otherwise
+drf --> media
+drf --> email : password reset
+proxy ..> django : [NOT VERIFIED - USER CONFIRMATION REQUIRED]
+@enduml

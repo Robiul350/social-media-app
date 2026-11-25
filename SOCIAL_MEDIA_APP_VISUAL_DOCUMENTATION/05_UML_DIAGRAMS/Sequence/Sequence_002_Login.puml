@@ -1,0 +1,10 @@
+@startuml
+title User Login
+participant Guest participant Login.jsx participant DRF_API participant SimpleJWT participant localStorage
+Guest -> Login.jsx : Enter username/password
+Login.jsx -> DRF_API : POST /api/users/login/ [API-011]
+DRF_API -> SimpleJWT : Issue access + refresh
+DRF_API -> Login.jsx : 200 user + tokens
+Login.jsx -> localStorage : Store access/refresh/user_id/username
+Login.jsx -> Guest : Dispatch auth-change; redirect
+@enduml

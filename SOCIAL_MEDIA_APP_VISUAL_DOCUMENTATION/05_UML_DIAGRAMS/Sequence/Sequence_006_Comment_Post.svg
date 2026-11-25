@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">Commenting on a Post</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">Source-derived interaction flow; API IDs from API_ANALYSIS.md.</text>
+<text x="1876" y="1037" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<rect x="-20" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="90" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">User</text>
+<polyline points="90,222 90,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="415" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="525" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">PostActions.jsx</text>
+<polyline points="525,222 525,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="850" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="960" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">DRF API</text>
+<polyline points="960,222 960,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="1285" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="1395" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">social/access.py</text>
+<polyline points="1395,222 1395,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="1720" y="160" width="220" height="62" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="1"/>
+<text x="1830" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" font-style="" fill="#172033" text-anchor="middle" dominant-baseline="central">PostgreSQL</text>
+<polyline points="1830,222 1830,930" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="7 5"/>
+<polyline points="90,260 525,260" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="525,260 515,264 515,255" fill="#2563EB" stroke="none"/>
+<rect x="228" y="248" width="158" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="307" y="252" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Submit comment or reply</text>
+<text x="90" y="226" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">1</text>
+<polyline points="525,332 960,332" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="960,332 950,336 950,327" fill="#2563EB" stroke="none"/>
+<rect x="623" y="320" width="237" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="742" y="324" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">POST posts/&lt;id&gt;/comments/ [API-043]</text>
+<text x="525" y="298" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">2</text>
+<polyline points="960,404 1395,404" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="1395,404 1385,408 1385,399" fill="#2563EB" stroke="none"/>
+<rect x="1070" y="392" width="213" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1177" y="396" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Visibility + parent same-post check</text>
+<text x="960" y="370" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">3</text>
+<polyline points="960,476 1830,476" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="1830,476 1820,480 1820,471" fill="#2563EB" stroke="none"/>
+<rect x="1289" y="464" width="211" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1395" y="468" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Create Comment; extract mentions</text>
+<text x="960" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">4</text>
+<polyline points="960,548 1830,548" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="1830,548 1820,552 1820,543" fill="#2563EB" stroke="none"/>
+<rect x="1261" y="536" width="267" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="1395" y="540" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">Create comment/reply/mention notifications</text>
+<text x="960" y="514" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">5</text>
+<polyline points="960,620 525,620" fill="none" stroke="#2563EB" stroke-width="2"/>
+<polygon points="525,620 534,615 534,624" fill="#2563EB" stroke="none"/>
+<rect x="670" y="608" width="144" height="23" rx="6" fill="#FFFFFF" stroke="none" stroke-width="1"/>
+<text x="742" y="612" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#2563EB" text-anchor="middle" dominant-baseline="central">201 CommentSerializer</text>
+<text x="960" y="586" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="400" font-style="" fill="#64748B" text-anchor="middle" dominant-baseline="central">6</text>
+<rect x="40" y="980" width="1840" height="58" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="62" y="996" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="62" y="1018" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">Participants are limited to those that participate in the verified flow; backend-only branches are explicit.</text>
+</svg>

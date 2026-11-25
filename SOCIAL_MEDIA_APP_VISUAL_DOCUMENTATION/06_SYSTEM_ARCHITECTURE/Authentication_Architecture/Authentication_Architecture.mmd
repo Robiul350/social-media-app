@@ -1,0 +1,19 @@
+%% Authentication Architecture
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  login["Login.jsx"]
+  storage["localStorage<br/>• 4 keys"]
+  guard["Route guard<br/>• presence only"]
+  api["Auth endpoints<br/>• API-010—017"]
+  jwt["SimpleJWT<br/>• access + refresh"]
+  blacklist["Blacklist tables"]
+  refresh["Axios 401 flow<br/>• single-flight"]
+  clear["Clear session<br/>• auth-change"]
+  login --> api
+  api --> jwt
+  jwt --> storage
+  guard --> storage
+  api -->|"401"| refresh
+  refresh --> jwt
+  refresh -->|"failure"| clear
+  jwt -->|"logout/rotation"| blacklist

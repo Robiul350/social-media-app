@@ -1,0 +1,14 @@
+%% DFD Level 2 — Authentication
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  guest["Guest"]
+  p["2.1 Identity process<br/>• validate/tokenize"]
+  d1["D1 users_user"]
+  d2["D2 users_profile"]
+  d3["D3 JWT blacklist"]
+  email["Email service<br/>• [NOT VERIFIED - USER CONFIRMATION REQUIRED]"]
+  guest -->|"credentials"| p
+  p --> d1
+  p -->|"signal"| d2
+  p -->|"rotate/logout"| d3
+  p -->|"reset"| email

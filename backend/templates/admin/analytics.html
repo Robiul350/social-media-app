@@ -1,0 +1,227 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block nav-sidebar %}
+{% include "admin/nav_sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="sc-dashboard sc-custom-page">
+    <header class="sc-welcome">
+        <div>
+            <p class="sc-eyebrow">INSIGHTS</p>
+            <h2>Analytics</h2>
+            <p>Aggregated from existing SocialConnect records. Every series below uses real database timestamps.</p>
+        </div>
+        <form class="sc-range-form" method="get" aria-label="Analytics date range">
+            <label for="sc-analytics-range">Date range</label>
+            <select id="sc-analytics-range" name="range" onchange="this.form.submit()">
+                {% for days, label in range_options.items %}
+                <option value="{{ days }}"{% if days == analytics.range_days %} selected{% endif %}>{{ label }}</option>
+                {% endfor %}
+            </select>
+            <noscript><button type="submit">Apply</button></noscript>
+        </form>
+    </header>
+
+    <section class="sc-metric-strip" aria-label="Analytics totals for {{ analytics.range_label }}">
+        <article class="sc-accent-blue"><span>Registrations</span><strong>{{ analytics.totals.registrations }}</strong></article>
+        <article class="sc-accent-teal"><span>Active user-days</span><strong>{{ analytics.totals.active_users }}</strong></article>
+        <article class="sc-accent-violet"><span>Posts</span><strong>{{ analytics.totals.posts }}</strong></article>
+        <article class="sc-accent-amber"><span>Comments</span><strong>{{ analytics.totals.comments }}</strong></article>
+        <article class="sc-accent-blue"><span>Likes</span><strong>{{ analytics.totals.likes }}</strong></article>
+        <article class="sc-accent-amber"><span>Reports</span><strong>{{ analytics.totals.reports }}</strong></article>
+        <article class="sc-accent-violet"><span>Engagement</span><strong>{{ analytics.totals.engagement }}</strong></article>
+        <article class="sc-accent-teal"><span>Friend requests</span><strong>{{ analytics.totals.friend_requests }}</strong></article>
+    </section>
+
+    {{ analytics_chart_data|json_script:"sc-analytics-data" }}
+
+    <section class="sc-analytics-grid sc-analytics-page-grid" aria-label="Trend charts">
+        {% if analytics.permissions.users %}
+        <article class="sc-dashboard-panel sc-chart-panel sc-span-two">
+            <div class="sc-panel-heading">
+                <div>
+                    <h2>User growth &amp; daily active users</h2>
+                    <p>Cumulative registrations, new users, and distinct users issued refresh tokens</p>
+                </div>
+                <span class="sc-period-label">{{ analytics.range_label }}</span>
+            </div>
+            <div class="sc-chart-legend">
+                <span class="sc-legend-dot sc-dot-blue"></span> Cumulative users
+                <span class="sc-legend-dot sc-dot-violet"></span> Registrations
+                <span class="sc-legend-dot sc-dot-teal"></span> Active user-days
+            </div>
+            <div class="sc-chart-skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <canvas class="sc-analytics-chart sc-line-chart" data-chart-type="line" data-chart-key="registrations_cumulative" data-chart-color="blue" data-secondary-key="registrations" data-secondary-color="violet" data-tertiary-key="active_users" data-tertiary-color="teal" role="img" aria-label="User growth, registrations, and daily active users"></canvas>
+            <p class="sc-chart-note">Active user-days count a user once per day when a refresh token is issued. This is a login proxy, not live presence.</p>
+        </article>
+
+        <article class="sc-dashboard-panel sc-chart-panel">
+            <div class="sc-panel-heading">
+                <div>
+                    <h2>Monthly active users</h2>
+                    <p>Distinct users with a refresh token in each of the last six months</p>
+                </div>
+                <span class="sc-period-label">Last 6 months</span>
+            </div>
+            <div class="sc-chart-legend"><span class="sc-legend-dot sc-dot-teal"></span> Monthly active users</div>
+            {% if analytics.totals.monthly_active_users %}
+            <div class="sc-chart-skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <canvas class="sc-analytics-chart sc-bar-chart" data-chart-type="bar" data-labels-key="monthly_active_labels" data-chart-key="monthly_active_users" data-chart-color="teal" role="img" aria-label="Monthly active users"></canvas>
+            {% else %}
+            <p class="sc-empty-state sc-chart-empty">No monthly active-user records are available.</p>
+            {% endif %}
+            <p class="sc-chart-note">Based on refresh-token issuance; the schema has no persisted login-event table.</p>
+        </article>
+        {% endif %}
+
+        {% if analytics.permissions.posts or analytics.permissions.comments or analytics.permissions.likes %}
+        <article class="sc-dashboard-panel sc-chart-panel">
+            <div class="sc-panel-heading">
+                <div>
+                    <h2>Post activity, likes &amp; comments</h2>
+                    <p>Daily content and engagement created in this range</p>
+                </div>
+                <span class="sc-period-label">{{ analytics.range_label }}</span>
+            </div>
+            <div class="sc-chart-legend">
+                {% if analytics.permissions.posts %}<span class="sc-legend-dot sc-dot-violet"></span> Posts{% endif %}
+                {% if analytics.permissions.comments %}<span class="sc-legend-dot sc-dot-teal"></span> Comments{% endif %}
+                {% if analytics.permissions.likes %}<span class="sc-legend-dot sc-dot-amber"></span> Likes{% endif %}
+            </div>
+            <div class="sc-chart-skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <canvas class="sc-analytics-chart sc-line-chart" data-chart-type="line" data-chart-key="posts" data-chart-color="violet" data-secondary-key="comments" data-secondary-color="teal" data-tertiary-key="likes" data-tertiary-color="amber" role="img" aria-label="Daily posts, comments, and likes"></canvas>
+        </article>
+
+        <article class="sc-dashboard-panel sc-chart-panel">
+            <div class="sc-panel-heading">
+                <div>
+                    <h2>Engagement analytics</h2>
+                    <p>Share of likes and comments in this range</p>
+                </div>
+                <span class="sc-period-label">{{ analytics.range_label }}</span>
+            </div>
+            <div class="sc-chart-legend">
+                {% if analytics.permissions.likes %}<span class="sc-legend-dot sc-dot-violet"></span> Likes{% endif %}
+                {% if analytics.permissions.comments %}<span class="sc-legend-dot sc-dot-amber"></span> Comments{% endif %}
+            </div>
+            {% if analytics.totals.engagement %}
+            <div class="sc-chart-skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <canvas class="sc-analytics-chart sc-donut-chart" data-chart-type="donut" data-values-key="engagement_values" data-donut-labels="Likes,Comments" data-donut-colors="violet,amber" role="img" aria-label="Likes and comments engagement split"></canvas>
+            {% else %}
+            <p class="sc-empty-state sc-chart-empty">No likes or comments were recorded in this range.</p>
+            {% endif %}
+        </article>
+        {% endif %}
+
+        {% if analytics.permissions.friend_requests %}
+        <article class="sc-dashboard-panel sc-chart-panel">
+            <div class="sc-panel-heading">
+                <div>
+                    <h2>Friend request trends</h2>
+                    <p>Requests created compared with requests accepted</p>
+                </div>
+                <span class="sc-period-label">{{ analytics.range_label }}</span>
+            </div>
+            <div class="sc-chart-legend">
+                <span class="sc-legend-dot sc-dot-amber"></span> Created
+                <span class="sc-legend-dot sc-dot-teal"></span> Accepted
+            </div>
+            {% if analytics.friend_request_trend_total %}
+            <div class="sc-chart-skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <canvas class="sc-analytics-chart sc-bar-chart" data-chart-type="bar" data-chart-key="friend_requests_created" data-chart-color="amber" data-secondary-key="friend_requests_accepted" data-secondary-color="teal" role="img" aria-label="Friend requests created and accepted"></canvas>
+            {% else %}
+            <p class="sc-empty-state sc-chart-empty">No friend-request activity was recorded in this range.</p>
+            {% endif %}
+        </article>
+        {% endif %}
+
+        {% if analytics.permissions.reports or analytics.permissions.messages or analytics.permissions.notifications %}
+        <article class="sc-dashboard-panel sc-chart-panel">
+            <div class="sc-panel-heading">
+                <div>
+                    <h2>Reports &amp; communication</h2>
+                    <p>Submitted reports, messages, and notifications created</p>
+                </div>
+                <span class="sc-period-label">{{ analytics.range_label }}</span>
+            </div>
+            <div class="sc-chart-legend">
+                {% if analytics.permissions.reports %}<span class="sc-legend-dot sc-dot-amber"></span> Reports{% endif %}
+                {% if analytics.permissions.messages %}<span class="sc-legend-dot sc-dot-violet"></span> Messages{% endif %}
+                {% if analytics.permissions.notifications %}<span class="sc-legend-dot sc-dot-teal"></span> Notifications{% endif %}
+            </div>
+            <div class="sc-chart-skeleton" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+            <canvas class="sc-analytics-chart sc-line-chart" data-chart-type="line" data-chart-key="reports" data-chart-color="amber" data-secondary-key="messages" data-secondary-color="violet" data-tertiary-key="notifications" data-tertiary-color="teal" role="img" aria-label="Reports, messages, and notifications"></canvas>
+            <p class="sc-chart-note">PostReport has no status field, so reports are shown as submissions only.</p>
+        </article>
+        {% endif %}
+    </section>
+
+    {% if not analytics.has_activity_data %}
+    <div class="sc-notice" role="status">No matching activity exists in the selected range for the data you are permitted to view.</div>
+    {% endif %}
+
+    <section class="sc-dashboard-panel sc-table-panel">
+        <header class="sc-table-heading">
+            <div>
+                <h2>Popular content</h2>
+                <p>Posts created in the selected range and ranked by recorded engagement</p>
+            </div>
+            {% if analytics.permissions.posts %}<a class="sc-view-all" href="{% url 'admin:posts_post_changelist' %}">Manage posts <span aria-hidden="true">→</span></a>{% endif %}
+        </header>
+        {% if analytics.popular_posts %}
+        <div class="sc-table-scroll">
+            <table class="sc-dashboard-table">
+                <thead><tr><th>Post</th><th>Author</th><th>Created</th><th>Likes</th><th>Comments</th><th>Action</th></tr></thead>
+                <tbody>
+                    {% for post in analytics.popular_posts %}
+                    <tr>
+                        <td class="sc-post-copy">{{ post.content|default:"Media post"|truncatechars:100 }}</td>
+                        <td>@{{ post.author.username }}</td>
+                        <td>{{ post.created_at|date:"M j, Y" }}</td>
+                        <td>{% if analytics.permissions.likes %}<span class="sc-metric-chip sc-accent-violet">{{ post.engagement_likes|default:0 }}</span>{% else %}<span class="sc-muted-cell">Restricted</span>{% endif %}</td>
+                        <td>{% if analytics.permissions.comments %}<span class="sc-metric-chip sc-accent-amber">{{ post.engagement_comments|default:0 }}</span>{% else %}<span class="sc-muted-cell">Restricted</span>{% endif %}</td>
+                        <td class="sc-action-column">{% if analytics.permissions.posts %}<a class="sc-row-action" href="{% url 'admin:posts_post_change' post.pk %}">Manage</a>{% else %}<span class="sc-row-action-disabled">—</span>{% endif %}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="sc-empty-state">No posts with engagement are available for this range.</p>
+        {% endif %}
+    </section>
+
+    <section class="sc-dashboard-panel sc-table-panel">
+        <header class="sc-table-heading">
+            <div>
+                <h2>Most active members</h2>
+                <p>Activity counted from existing post, comment, and like records</p>
+            </div>
+            {% if analytics.permissions.users %}<a class="sc-view-all" href="{% url 'admin:users_user_changelist' %}">Manage users <span aria-hidden="true">→</span></a>{% endif %}
+        </header>
+        {% if analytics.top_users %}
+        <div class="sc-table-scroll">
+            <table class="sc-dashboard-table">
+                <thead><tr><th>Member</th><th>Joined</th><th>Posts</th><th>Comments</th><th>Likes</th><th>Action</th></tr></thead>
+                <tbody>
+                    {% for member in analytics.top_users %}
+                    <tr>
+                        <td class="sc-person-cell"><span class="sc-person-name">{{ member.get_full_name|default:member.username }}</span> <span class="sc-muted-cell">@{{ member.username }}</span></td>
+                        <td>{{ member.date_joined|date:"M j, Y" }}</td>
+                        <td>{% if analytics.permissions.posts %}<span class="sc-metric-chip sc-accent-violet">{{ member.activity_posts|default:0 }}</span>{% else %}<span class="sc-muted-cell">Restricted</span>{% endif %}</td>
+                        <td>{% if analytics.permissions.comments %}<span class="sc-metric-chip sc-accent-amber">{{ member.activity_comments|default:0 }}</span>{% else %}<span class="sc-muted-cell">Restricted</span>{% endif %}</td>
+                        <td>{% if analytics.permissions.likes %}<span class="sc-metric-chip sc-accent-blue">{{ member.activity_likes|default:0 }}</span>{% else %}<span class="sc-muted-cell">Restricted</span>{% endif %}</td>
+                        <td class="sc-action-column">{% if analytics.permissions.users %}<a class="sc-row-action" href="{% url 'admin:users_user_change' member.pk %}">Manage</a>{% else %}<span class="sc-row-action-disabled">—</span>{% endif %}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="sc-empty-state">No member activity is available for this range.</p>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}

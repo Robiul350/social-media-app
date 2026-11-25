@@ -1,0 +1,12 @@
+%% DFD Level 2 — Post Management
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  author["Author"]
+  p["2.2 Post process<br/>• CRUD/visibility"]
+  d1["D1 posts_post"]
+  d2["D2 posts_* related"]
+  d3["D3 Media storage"]
+  author -->|"post/write"| p
+  p --> d1
+  p --> d2
+  p -->|"upload"| d3

@@ -1,0 +1,11 @@
+@startuml
+title Chat Activity
+start
+:Open /messages/<id>;
+:Connect WebSocket with token;
+if (can_chat_between?) then (yes)
+:Persist Message; broadcast;
+:Render chat_message/typing/presence;
+endif
+stop
+@enduml

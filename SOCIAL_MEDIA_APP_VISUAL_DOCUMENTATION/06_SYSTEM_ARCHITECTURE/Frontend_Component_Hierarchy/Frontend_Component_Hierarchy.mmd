@@ -1,0 +1,22 @@
+%% Frontend Component Hierarchy
+%% Source-verified | Social Media App (working UI/admin name: SocialConnect)
+flowchart LR
+  main["main.jsx<br/>• React root"]
+  app["App.jsx<br/>• router + guards"]
+  shell["AppShell<br/>• desktop/mobile shell"]
+  nav["navbar<br/>• search/badges/theme"]
+  pages["Pages<br/>• 14 active routes"]
+  shared["Shared components<br/>• PostActions/Stories/dialogs"]
+  api["Axios client<br/>• Bearer + refresh"]
+  store["Profile store<br/>• subscribe/load"]
+  hooks["useFocusTrap<br/>• modal keyboard focus"]
+  ws["WS clients<br/>• chat/notifications"]
+  main --> app
+  app --> shell
+  app --> pages
+  shell --> nav
+  pages --> shared
+  pages --> api
+  shared --> hooks
+  shared --> store
+  pages --> ws

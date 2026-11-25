@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="100%" height="100%" fill="#F5F7FB"/>
+<rect x="0" y="0" width="1920" height="118" rx="0" fill="#0F172A" stroke="none" stroke-width="1"/>
+<rect x="0" y="114" width="1920" height="4" rx="0" fill="#2563EB" stroke="none" stroke-width="1"/>
+<text x="44" y="28" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="700" font-style="" fill="#FFFFFF" text-anchor="start" dominant-baseline="text-before-edge">User Flow Diagram</text>
+<text x="44" y="74" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="400" font-style="" fill="#CBD5E1" text-anchor="start" dominant-baseline="text-before-edge">End-to-end journeys proven by source routes and components.</text>
+<text x="1876" y="1037" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#64748B" text-anchor="end" dominant-baseline="text-after-edge">Source-verified | Social Media App (UI name: SocialConnect)</text>
+<rect x="65" y="406" width="160" height="80" rx="12" fill="#C3CFC8" stroke="none" stroke-width="1"/>
+<rect x="60" y="400" width="160" height="80" rx="12" fill="#E8F7EE" stroke="#16A34A" stroke-width="2"/>
+<text x="76" y="414" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Start</text>
+<rect x="285" y="406" width="240" height="90" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="280" y="400" width="240" height="90" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="296" y="414" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Login / Register</text>
+<rect x="585" y="406" width="220" height="90" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="580" y="400" width="220" height="90" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="596" y="414" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Home feed</text>
+<rect x="865" y="256" width="280" height="90" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="860" y="250" width="280" height="90" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="876" y="264" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Create/like/comment</text>
+<rect x="865" y="436" width="280" height="90" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="860" y="430" width="280" height="90" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="876" y="444" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Search/follow</text>
+<rect x="865" y="616" width="280" height="90" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="860" y="610" width="280" height="90" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="876" y="624" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Direct chat</text>
+<rect x="1185" y="436" width="260" height="90" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1180" y="430" width="260" height="90" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1196" y="444" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Notifications</text>
+<rect x="1485" y="436" width="260" height="90" rx="12" fill="#C3CAD5" stroke="none" stroke-width="1"/>
+<rect x="1480" y="430" width="260" height="90" rx="12" fill="#E8F0FE" stroke="#2563EB" stroke-width="2"/>
+<text x="1496" y="444" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Profile/settings</text>
+<rect x="1485" y="656" width="260" height="90" rx="12" fill="#C3CFC8" stroke="none" stroke-width="1"/>
+<rect x="1480" y="650" width="260" height="90" rx="12" fill="#E8F7EE" stroke="#16A34A" stroke-width="2"/>
+<text x="1496" y="664" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" font-style="" fill="#172033" text-anchor="start" dominant-baseline="text-before-edge">Logout</text>
+<polyline points="220,440 280,445" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="280,445 269,448 270,439" fill="#64748B" stroke="none"/>
+<polyline points="520,445 580,445" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="580,445 570,449 570,440" fill="#64748B" stroke="none"/>
+<polyline points="800,445 860,295" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="860,295 860,305 851,302" fill="#64748B" stroke="none"/>
+<polyline points="800,445 860,475" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="860,475 849,474 853,466" fill="#64748B" stroke="none"/>
+<polyline points="800,445 860,655" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="860,655 852,646 861,644" fill="#64748B" stroke="none"/>
+<polyline points="1140,295 1180,475" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1180,475 1173,466 1182,464" fill="#64748B" stroke="none"/>
+<polyline points="1140,475 1180,475" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1180,475 1170,479 1170,470" fill="#64748B" stroke="none"/>
+<polyline points="1140,655 1180,475" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1180,475 1182,485 1173,483" fill="#64748B" stroke="none"/>
+<polyline points="800,445 1480,475" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1480,475 1469,479 1470,469" fill="#64748B" stroke="none"/>
+<polyline points="1610,520 1610,650" fill="none" stroke="#64748B" stroke-width="2"/>
+<polygon points="1610,650 1605,640 1614,640" fill="#64748B" stroke="none"/>
+<rect x="40" y="958" width="1840" height="62" rx="12" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1"/>
+<text x="60" y="972" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" font-style="" fill="#2563EB" text-anchor="start" dominant-baseline="text-before-edge">EXPLANATION / SOURCE RULE</text>
+<text x="60" y="994" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="400" font-style="" fill="#475569" text-anchor="start" dominant-baseline="text-before-edge">No /explore or /settings route exists; related mockups are proposals.</text>
+</svg>
