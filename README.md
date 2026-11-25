@@ -198,3 +198,4 @@ npm.cmd run build
 - Chat attachments are supported by `POST /api/chat/conversations/<user_id>/` via multipart form data. Maximum size is 25 MB; allowed types are images, video, audio, PDF, and plain text.
 - Authors can list their own drafts/scheduled posts with `GET /api/posts/?drafts=true` and can retrieve/edit a draft by ID. Other users cannot see them.
 - `npm.cmd` is required on this Windows checkout because `npm` resolves to a blocked PowerShell script.
+# social-media-app
